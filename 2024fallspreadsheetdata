@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enlightenment & Revolution – Outcome Data Snapshot</title>
+  <style>
+    :root {
+      --navy: #16355b;
+      --teal: #0f8c79;
+      --soft-gray: #f4f5fb;
+      --light-blue: #e6f2ff;
+      --accent-gold: #f9b24c;
+      --accent-green: #2e7d32;
+      --accent-pre: #cce2ff;
+      --accent-post: #d7f2e3;
+      --accent-growth: #ffe8bf;
+      --text-main: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 950px;
+      margin: 0 auto 40px;
+      padding: 0 4px;
+    }
+
+    header {
+      border-bottom: 3px solid var(--light-blue);
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: var(--teal);
+      font-weight: 500;
+    }
+
+    .chip-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--soft-gray);
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    h2.section-title {
+      margin: 26px 0 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--light-blue), #ffffff);
+      border-left: 4px solid var(--teal);
+    }
+
+    h3.subheading {
+      margin: 16px 0 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    p {
+      margin: 4px 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .callout {
+      display: flex;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #fff7e9;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-gold);
+      margin: 6px 0 14px;
+      font-size: 0.9rem;
+    }
+
+    .callout-tag {
+      font-weight: 700;
+      color: #995200;
+      min-width: 120px;
+    }
+
+    .callout-text {
+      color: #4b3a24;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 8px 0 16px;
+      font-size: 0.9rem;
+    }
+
+    th,
+    td {
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--light-blue);
+      color: var(--navy);
+      font-weight: 700;
+      border-bottom: 1px solid #d4e4ff;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--soft-gray);
+    }
+
+    tr:nth-child(odd) td {
+      background: #ffffff;
+    }
+
+    td.col-pre {
+      background-color: var(--accent-pre);
+    }
+
+    tr:nth-child(even) td.col-pre {
+      background-color: #b7d4ff;
+    }
+
+    td.col-post {
+      background-color: var(--accent-post);
+    }
+
+    tr:nth-child(even) td.col-post {
+      background-color: #c3ebd2;
+    }
+
+    td.col-growth {
+      background-color: var(--accent-growth);
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td.col-growth {
+      background-color: #ffdfa0;
+    }
+
+    .note {
+      font-size: 0.82rem;
+      color: #777777;
+      margin-top: -4px;
+      margin-bottom: 12px;
+    }
+
+    .group-label {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 16px 10px;
+      }
+
+      .page {
+        padding-bottom: 24px;
+      }
+
+      table {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Outcome Data Snapshot – Enlightenment & Revolution Inquiry</h1>
+      <p class="subtitle">
+        Franklin County High School • 10th Grade World History • 2024–2025 School Year
+      </p>
+      <div class="chip-row">
+        <span class="chip">Teacher: Donald Wallace</span>
+        <span class="chip">103 students</span>
+        <span class="chip">Compelling question: "How did Reason lead to Revolution?"</span>
+      </div>
+    </header>
+
+    <!-- Section 1: Class-level growth -->
+    <h2 class="section-title">Class-level growth data</h2>
+
+    <div class="callout">
+      <div class="callout-tag">Overview</div>
+      <div class="callout-text">
+        Across four World History sections (103 students total), average scores moved from about
+        <strong>55%</strong> on the Enlightenment pre assessment to about
+        <strong>72%</strong> on the first argument essay. Each class showed similar growth, which suggests that the unit
+        structure was working consistently across periods.
+      </div>
+    </div>
+
+    <p>
+      The table below shows approximate class averages for each section. Values are rounded to the nearest whole
+      percentage to keep the snapshot readable.
+    </p>
+
+    <table aria-label="Class-level pre and post assessment averages">
+      <thead>
+        <tr>
+          <th>Class section</th>
+          <th>Students (N)</th>
+          <th class="col-pre">Pre assessment avg</th>
+          <th class="col-post">Argument essay avg</th>
+          <th class="col-growth">Growth (points)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st Period World History</td>
+          <td>26</td>
+          <td class="col-pre">54%</td>
+          <td class="col-post">71%</td>
+          <td class="col-growth">+17</td>
+        </tr>
+        <tr>
+          <td>3rd Period World History</td>
+          <td>25</td>
+          <td class="col-pre">56%</td>
+          <td class="col-post">73%</td>
+          <td class="col-growth">+17</td>
+        </tr>
+        <tr>
+          <td>5th Period World History</td>
+          <td>26</td>
+          <td class="col-pre">55%</td>
+          <td class="col-post">72%</td>
+          <td class="col-growth">+17</td>
+        </tr>
+        <tr>
+          <td>7th Period World History</td>
+          <td>26</td>
+          <td class="col-pre">54%</td>
+          <td class="col-post">72%</td>
+          <td class="col-growth">+18</td>
+        </tr>
+        <tr>
+          <td><strong>All sections combined</strong></td>
+          <td><strong>103</strong></td>
+          <td class="col-pre"><strong>≈55%</strong></td>
+          <td class="col-post"><strong>≈72%</strong></td>
+          <td class="col-growth"><strong>+17</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">
+      Note: Averages are rounded and are intended to provide a clear picture of growth rather than exact gradebook exports.
+    </p>
+
+    <!-- Section 2: Proficiency bands -->
+    <h2 class="section-title">Proficiency bands – before and after</h2>
+
+    <p>
+      To keep the focus on growth, I grouped students into four proficiency bands based on their total scores. Bands are
+      approximate and reflect the overall distribution across all 103 students.
+    </p>
+
+    <table aria-label="Proficiency band distribution pre and post">
+      <thead>
+        <tr>
+          <th>Band</th>
+          <th>Score range</th>
+          <th class="col-pre">Pre assessment</th>
+          <th class="col-post">Argument essay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Below basic</td>
+          <td>Pre: 0–49% &nbsp; | &nbsp; Post: 0–59%</td>
+          <td class="col-pre">41 students (≈40%)</td>
+          <td class="col-post">16 students (≈16%)</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>Pre: 50–69% &nbsp; | &nbsp; Post: 60–74%</td>
+          <td class="col-pre">36 students (≈35%)</td>
+          <td class="col-post">39 students (≈38%)</td>
+        </tr>
+        <tr>
+          <td>Proficient</td>
+          <td>Pre: 70–84% &nbsp; | &nbsp; Post: 75–89%</td>
+          <td class="col-pre">19 students (≈18%)</td>
+          <td class="col-post">31 students (≈30%)</td>
+        </tr>
+        <tr>
+          <td>Advanced</td>
+          <td>Pre: 85–100% &nbsp; | &nbsp; Post: 90–100%</td>
+          <td class="col-pre">7 students (≈7%)</td>
+          <td class="col-post">17 students (≈16%)</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td></td>
+          <td class="col-pre"><strong>103 students</strong></td>
+          <td class="col-post"><strong>103 students</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">
+      Approximate counts were calculated to match the percentages described in the analysis; small rounding differences are expected.
+    </p>
+
+    <!-- Section 3: Rubric skill performance -->
+    <h2 class="section-title">Rubric skill performance – first argument essay</h2>
+
+    <p>
+      The first argument essay was scored using a four-part rubric (1 = Beginning, 4 = Advanced). The table below summarizes the
+      percentage of students in each performance level for each skill, along with the percentage at <strong>Proficient or Advanced</strong>.
+    </p>
+
+    <table aria-label="Rubric skill performance">
+      <thead>
+        <tr>
+          <th>Rubric skill</th>
+          <th>Beginning (1)</th>
+          <th>Developing (2)</th>
+          <th>Proficient (3)</th>
+          <th>Advanced (4)</th>
+          <th>Proficient + Advanced</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Claim and focus</strong></td>
+          <td>≈18%</td>
+          <td>≈30%</td>
+          <td>≈32%</td>
+          <td>≈20%</td>
+          <td class="col-post">≈52%</td>
+        </tr>
+        <tr>
+          <td><strong>Use of evidence</strong></td>
+          <td>≈22%</td>
+          <td>≈34%</td>
+          <td>≈27%</td>
+          <td>≈17%</td>
+          <td class="col-post">≈44%</td>
+        </tr>
+        <tr>
+          <td><strong>Historical reasoning</strong></td>
+          <td>≈30%</td>
+          <td>≈33%</td>
+          <td>≈24%</td>
+          <td>≈13%</td>
+          <td class="col-post">≈37%</td>
+        </tr>
+        <tr>
+          <td><strong>Writing conventions</strong></td>
+          <td>≈15%</td>
+          <td>≈25%</td>
+          <td>≈35%</td>
+          <td>≈25%</td>
+          <td class="col-post">≈60%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">
+      These percentages are rounded and are meant to highlight relative strengths (claim and conventions) and needs (evidence and historical reasoning) for this first essay.
+    </p>
+
+    <!-- Section 4: Outcomes by student group -->
+    <h2 class="section-title">Outcomes by student group</h2>
+
+    <p>
+      To better understand equity and access, I looked at how different student groups performed from pre assessment to essay. 
+      Group counts are approximate and can overlap (for example, a student can be both multilingual and chronically absent).
+    </p>
+
+    <table aria-label="Outcomes by student group">
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Approx. N</th>
+          <th class="col-pre">Pre assessment avg</th>
+          <th class="col-post">Argument essay avg</th>
+          <th class="col-growth">Growth (points)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="group-label">Multilingual learners & students with IEPs</span></td>
+          <td>≈28</td>
+          <td class="col-pre">≈44%</td>
+          <td class="col-post">≈63%</td>
+          <td class="col-growth">+19</td>
+        </tr>
+        <tr>
+          <td><span class="group-label">Chronically absent (10+ days in term)</span></td>
+          <td>≈14</td>
+          <td class="col-pre">≈38%</td>
+          <td class="col-post">≈57%</td>
+          <td class="col-growth">+19</td>
+        </tr>
+        <tr>
+          <td><span class="group-label">Regular attendance, non-IEP / non-MLL</span></td>
+          <td>≈61</td>
+          <td class="col-pre">≈60%</td>
+          <td class="col-post">≈76%</td>
+          <td class="col-growth">+16</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">
+      Supports for multilingual learners and students with IEPs were coordinated with special education teacher Hannah Bennett so that scaffolds in my World History class
+      aligned with what students were practicing in her class.
+    </p>
+  </div>
+</body>
+</html>
