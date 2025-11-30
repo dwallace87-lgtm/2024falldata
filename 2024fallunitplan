@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Did Reason Lead to Revolution? - Unit Plan</title>
+  <style>
+    /* Reset some basic elements */
+    body, h1, h2, h3, p, table, th, td {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    main {
+      margin-top: 80px; /* space for fixed header */
+      width: 90%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 40px;
+    }
+    section.overview {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    section.overview h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    section.overview p {
+      font-size: 1rem;
+      color: #555;
+    }
+    section.day {
+      background-color: #fff;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    section.day h2 {
+      background-color: #555;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 1.4rem;
+    }
+    section.day div {
+      padding: 15px 20px;
+    }
+    section.day div + div {
+      border-top: 1px solid #eee;
+    }
+    section.day h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #222;
+    }
+    section.day p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    /* Color-coded sections */
+    .mini-lesson {
+      background-color: #d0eaff;
+    }
+    .guided-practice {
+      background-color: #d0fadd;
+    }
+    .independent-practice {
+      background-color: #ffebcc;
+    }
+    .share-closure {
+      background-color: #e6d0fa;
+    }
+    .materials {
+      background-color: #f5f5f5;
+    }
+    /* Standards section */
+    section.standards {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    section.standards h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+    table.standards-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table.standards-table th, table.standards-table td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    table.standards-table th {
+      background-color: #333;
+      color: #fff;
+    }
+    table.standards-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      section.day h2 {
+        font-size: 1.2rem;
+      }
+      section.day h3 {
+        font-size: 1.1rem;
+      }
+      section.standards table, section.standards th, section.standards td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>How Did Reason Lead to Revolution?</h1>
+  </header>
+  <main>
+    <section class="overview">
+      <h2>Welcome / Overview</h2>
+      <p>[Insert overview here]</p>
+    </section>
+
+    <section class="day" id="day1">
+      <h2>Day 1: [Insert Day 1 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day2">
+      <h2>Day 2: [Insert Day 2 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <!-- Repeat structure for Days 3-12 similarly -->
+    <section class="day" id="day3">
+      <h2>Day 3: [Insert Day 3 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day4">
+      <h2>Day 4: [Insert Day 4 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day5">
+      <h2>Day 5: [Insert Day 5 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day6">
+      <h2>Day 6: [Insert Day 6 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day7">
+      <h2>Day 7: [Insert Day 7 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day8">
+      <h2>Day 8: [Insert Day 8 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day9">
+      <h2>Day 9: [Insert Day 9 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day10">
+      <h2>Day 10: [Insert Day 10 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day11">
+      <h2>Day 11: [Insert Day 11 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day12">
+      <h2>Day 12: [Insert Day 12 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="day" id="day13">
+      <h2>Day 13: [Insert Day 13 Focus Title]</h2>
+      <div class="mini-lesson">
+        <h3>Mini-Lesson</h3>
+        <p>[Insert Mini-Lesson content here]</p>
+      </div>
+      <div class="guided-practice">
+        <h3>Guided Practice</h3>
+        <p>[Insert Guided Practice content here]</p>
+      </div>
+      <div class="independent-practice">
+        <h3>Independent Practice</h3>
+        <p>[Insert Independent Practice content here]</p>
+      </div>
+      <div class="share-closure">
+        <h3>Share/Closure</h3>
+        <p>[Insert Share/Closure content here]</p>
+      </div>
+      <div class="materials">
+        <h3>Materials/Resources Used</h3>
+        <p>[Insert Materials/Resources here]</p>
+      </div>
+    </section>
+
+    <section class="standards">
+      <h2>Standards Alignment</h2>
+      <p><strong>Kentucky Social Studies Standards:</strong></p>
+      <table class="standards-table">
+        <tr>
+          <th>Standard</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>[Insert Standard Code]</td>
+          <td>[Insert Standard Description]</td>
+        </tr>
+        <tr>
+          <td>[Insert Standard Code]</td>
+          <td>[Insert Standard Description]</td>
+        </tr>
+        <tr>
+          <td>[Insert Standard Code]</td>
+          <td>[Insert Standard Description]</td>
+        </tr>
+        <!-- Add more standards as needed -->
+      </table>
+    </section>
+
+  </main>
+</body>
+</html>
