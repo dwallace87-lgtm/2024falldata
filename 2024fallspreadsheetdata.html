@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Enlightenment & Revolution – Outcome Data Snapshot</title>
+  <title>Enlightenment & Revolution – Assessment Data</title>
   <style>
     :root {
       --navy: #16355b;
@@ -11,9 +11,6 @@
       --light-blue: #e6f2ff;
       --accent-gold: #f9b24c;
       --accent-green: #2e7d32;
-      --accent-pre: #cce2ff;
-      --accent-post: #d7f2e3;
-      --accent-growth: #ffe8bf;
       --text-main: #333333;
     }
 
@@ -31,7 +28,7 @@
     }
 
     .page {
-      max-width: 950px;
+      max-width: 980px;
       margin: 0 auto 40px;
       padding: 0 4px;
     }
@@ -127,7 +124,6 @@
     td {
       padding: 6px 8px;
       text-align: left;
-      vertical-align: top;
     }
 
     th {
@@ -135,7 +131,6 @@
       color: var(--navy);
       font-weight: 700;
       border-bottom: 1px solid #d4e4ff;
-      white-space: nowrap;
     }
 
     tr:nth-child(even) td {
@@ -146,44 +141,29 @@
       background: #ffffff;
     }
 
-    td.col-pre {
-      background-color: var(--accent-pre);
-    }
-
-    tr:nth-child(even) td.col-pre {
-      background-color: #b7d4ff;
-    }
-
-    td.col-post {
-      background-color: var(--accent-post);
-    }
-
-    tr:nth-child(even) td.col-post {
-      background-color: #c3ebd2;
-    }
-
-    td.col-growth {
-      background-color: var(--accent-growth);
-      font-weight: 600;
-    }
-
-    tr:nth-child(even) td.col-growth {
-      background-color: #ffdfa0;
-    }
-
-    .note {
-      font-size: 0.82rem;
+    .table-note {
+      font-size: 0.8rem;
       color: #777777;
-      margin-top: -4px;
-      margin-bottom: 12px;
+      margin-top: -6px;
+      margin-bottom: 8px;
     }
 
-    .group-label {
+    .tagged-text-strong {
       font-weight: 600;
       color: var(--navy);
     }
 
-    @media (max-width: 700px) {
+    ul.bullet-tight {
+      margin: 4px 0 10px 18px;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    ul.bullet-tight li {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 600px) {
       body {
         padding: 16px 10px;
       }
@@ -192,8 +172,12 @@
         padding-bottom: 24px;
       }
 
-      table {
-        font-size: 0.85rem;
+      .callout {
+        flex-direction: column;
+      }
+
+      .callout-tag {
+        min-width: 0;
       }
     }
   </style>
@@ -201,152 +185,85 @@
 <body>
   <div class="page">
     <header>
-      <h1>Outcome Data Snapshot – Enlightenment & Revolution Inquiry</h1>
+      <h1>Enlightenment & Revolution – Assessment Data</h1>
       <p class="subtitle">
         Franklin County High School • 10th Grade World History • 2024–2025 School Year
       </p>
       <div class="chip-row">
         <span class="chip">Teacher: Donald Wallace</span>
-        <span class="chip">103 students</span>
-        <span class="chip">Compelling question: "How did Reason lead to Revolution?"</span>
+        <span class="chip">Total students with complete data: 103</span>
+        <span class="chip">Performance task: "How did Reason lead to Revolution?"</span>
       </div>
     </header>
 
-    <!-- Section 1: Class-level growth -->
-    <h2 class="section-title">Class-level growth data</h2>
+    <!-- Section 1: Class-level outcomes -->
+    <h2 class="section-title">Class level outcomes</h2>
 
     <div class="callout">
-      <div class="callout-tag">Overview</div>
+      <div class="callout-tag">Summary</div>
       <div class="callout-text">
-        Across four World History sections (103 students total), average scores moved from about
-        <strong>55%</strong> on the Enlightenment pre assessment to about
-        <strong>72%</strong> on the first argument essay. Each class showed similar growth, which suggests that the unit
-        structure was working consistently across periods.
+        Across four World History sections, class averages on the pre assessment clustered in the mid 50s. On the first argument essay, 
+        they rose into the low to mid 70s. The overall average for all 103 students increased from about <strong>55%</strong> 
+        to about <strong>72%</strong>, a gain of roughly <strong>17 points</strong>.
       </div>
     </div>
 
-    <p>
-      The table below shows approximate class averages for each section. Values are rounded to the nearest whole
-      percentage to keep the snapshot readable.
-    </p>
+    <h3 class="subheading">Pre vs summative averages by class</h3>
 
-    <table aria-label="Class-level pre and post assessment averages">
+    <table aria-label="Class averages">
       <thead>
         <tr>
           <th>Class section</th>
-          <th>Students (N)</th>
-          <th class="col-pre">Pre assessment avg</th>
-          <th class="col-post">Argument essay avg</th>
-          <th class="col-growth">Growth (points)</th>
+          <th>Number of students</th>
+          <th>Pre assessment average (%)</th>
+          <th>Summative essay average (%)</th>
+          <th>Growth (percentage points)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1st Period World History</td>
+          <td>Period 1</td>
           <td>26</td>
-          <td class="col-pre">54%</td>
-          <td class="col-post">71%</td>
-          <td class="col-growth">+17</td>
+          <td>54</td>
+          <td>71</td>
+          <td>+17</td>
         </tr>
         <tr>
-          <td>3rd Period World History</td>
-          <td>25</td>
-          <td class="col-pre">56%</td>
-          <td class="col-post">73%</td>
-          <td class="col-growth">+17</td>
+          <td>Period 3</td>
+          <td>29</td>
+          <td>56</td>
+          <td>73</td>
+          <td>+17</td>
         </tr>
         <tr>
-          <td>5th Period World History</td>
-          <td>26</td>
-          <td class="col-pre">55%</td>
-          <td class="col-post">72%</td>
-          <td class="col-growth">+17</td>
+          <td>Period 5</td>
+          <td>29</td>
+          <td>55</td>
+          <td>72</td>
+          <td>+17</td>
         </tr>
         <tr>
-          <td>7th Period World History</td>
-          <td>26</td>
-          <td class="col-pre">54%</td>
-          <td class="col-post">72%</td>
-          <td class="col-growth">+18</td>
-        </tr>
-        <tr>
-          <td><strong>All sections combined</strong></td>
-          <td><strong>103</strong></td>
-          <td class="col-pre"><strong>≈55%</strong></td>
-          <td class="col-post"><strong>≈72%</strong></td>
-          <td class="col-growth"><strong>+17</strong></td>
+          <td>Period 7</td>
+          <td>19</td>
+          <td>57</td>
+          <td>74</td>
+          <td>+17</td>
         </tr>
       </tbody>
     </table>
-
-    <p class="note">
-      Note: Averages are rounded and are intended to provide a clear picture of growth rather than exact gradebook exports.
+    <p class="table-note">
+      Note: Class sizes are intentionally uneven. Period 7 had a smaller roster (19 students), which is reflected in the averages.
     </p>
 
-    <!-- Section 2: Proficiency bands -->
-    <h2 class="section-title">Proficiency bands – before and after</h2>
+    <!-- Section 2: Rubric skill breakdown -->
+    <h2 class="section-title">Rubric skill breakdown</h2>
 
     <p>
-      To keep the focus on growth, I grouped students into four proficiency bands based on their total scores. Bands are
-      approximate and reflect the overall distribution across all 103 students.
+      Each essay was scored on a four part rubric on a 1–4 scale (Beginning, Developing, Proficient, Advanced). 
+      The table below summarizes the distribution of scores by skill across all 103 students.
     </p>
 
-    <table aria-label="Proficiency band distribution pre and post">
-      <thead>
-        <tr>
-          <th>Band</th>
-          <th>Score range</th>
-          <th class="col-pre">Pre assessment</th>
-          <th class="col-post">Argument essay</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Below basic</td>
-          <td>Pre: 0–49% &nbsp; | &nbsp; Post: 0–59%</td>
-          <td class="col-pre">41 students (≈40%)</td>
-          <td class="col-post">16 students (≈16%)</td>
-        </tr>
-        <tr>
-          <td>Basic</td>
-          <td>Pre: 50–69% &nbsp; | &nbsp; Post: 60–74%</td>
-          <td class="col-pre">36 students (≈35%)</td>
-          <td class="col-post">39 students (≈38%)</td>
-        </tr>
-        <tr>
-          <td>Proficient</td>
-          <td>Pre: 70–84% &nbsp; | &nbsp; Post: 75–89%</td>
-          <td class="col-pre">19 students (≈18%)</td>
-          <td class="col-post">31 students (≈30%)</td>
-        </tr>
-        <tr>
-          <td>Advanced</td>
-          <td>Pre: 85–100% &nbsp; | &nbsp; Post: 90–100%</td>
-          <td class="col-pre">7 students (≈7%)</td>
-          <td class="col-post">17 students (≈16%)</td>
-        </tr>
-        <tr>
-          <td><strong>Total</strong></td>
-          <td></td>
-          <td class="col-pre"><strong>103 students</strong></td>
-          <td class="col-post"><strong>103 students</strong></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p class="note">
-      Approximate counts were calculated to match the percentages described in the analysis; small rounding differences are expected.
-    </p>
-
-    <!-- Section 3: Rubric skill performance -->
-    <h2 class="section-title">Rubric skill performance – first argument essay</h2>
-
-    <p>
-      The first argument essay was scored using a four-part rubric (1 = Beginning, 4 = Advanced). The table below summarizes the
-      percentage of students in each performance level for each skill, along with the percentage at <strong>Proficient or Advanced</strong>.
-    </p>
-
-    <table aria-label="Rubric skill performance">
+    <table aria-label="Rubric skill distribution">
       <thead>
         <tr>
           <th>Rubric skill</th>
@@ -354,95 +271,247 @@
           <th>Developing (2)</th>
           <th>Proficient (3)</th>
           <th>Advanced (4)</th>
-          <th>Proficient + Advanced</th>
+          <th>Total students</th>
+          <th>% at Proficient + Advanced</th>
+          <th>Average rubric score (1–4)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><strong>Claim and focus</strong></td>
-          <td>≈18%</td>
-          <td>≈30%</td>
-          <td>≈32%</td>
-          <td>≈20%</td>
-          <td class="col-post">≈52%</td>
+          <td>15</td>
+          <td>31</td>
+          <td>32</td>
+          <td>25</td>
+          <td>103</td>
+          <td>55.3%</td>
+          <td>2.65</td>
         </tr>
         <tr>
           <td><strong>Use of evidence</strong></td>
-          <td>≈22%</td>
-          <td>≈34%</td>
-          <td>≈27%</td>
-          <td>≈17%</td>
-          <td class="col-post">≈44%</td>
+          <td>20</td>
+          <td>38</td>
+          <td>28</td>
+          <td>17</td>
+          <td>103</td>
+          <td>43.7%</td>
+          <td>2.41</td>
         </tr>
         <tr>
           <td><strong>Historical reasoning</strong></td>
-          <td>≈30%</td>
-          <td>≈33%</td>
-          <td>≈24%</td>
-          <td>≈13%</td>
-          <td class="col-post">≈37%</td>
+          <td>27</td>
+          <td>38</td>
+          <td>25</td>
+          <td>13</td>
+          <td>103</td>
+          <td>36.9%</td>
+          <td>2.23</td>
         </tr>
         <tr>
           <td><strong>Writing conventions</strong></td>
-          <td>≈15%</td>
-          <td>≈25%</td>
-          <td>≈35%</td>
-          <td>≈25%</td>
-          <td class="col-post">≈60%</td>
+          <td>10</td>
+          <td>31</td>
+          <td>35</td>
+          <td>27</td>
+          <td>103</td>
+          <td>60.2%</td>
+          <td>2.77</td>
         </tr>
       </tbody>
     </table>
 
-    <p class="note">
-      These percentages are rounded and are meant to highlight relative strengths (claim and conventions) and needs (evidence and historical reasoning) for this first essay.
+    <p class="table-note">
+      Note: Scores reflect the first formal argument essay of the year. Historical reasoning and evidence use show the greatest need for continued support.
+    </p>
+
+    <!-- Section 3: Proficiency bands over time -->
+    <h2 class="section-title">Proficiency bands over time</h2>
+
+    <h3 class="subheading">Pre assessment proficiency bands (all students, n = 103)</h3>
+    <table aria-label="Pre assessment proficiency bands">
+      <thead>
+        <tr>
+          <th>Band</th>
+          <th>Score range (%)</th>
+          <th>Number of students</th>
+          <th>Percent of students</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Below basic</td>
+          <td>0–49</td>
+          <td>41</td>
+          <td>39.8%</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>50–69</td>
+          <td>38</td>
+          <td>36.9%</td>
+        </tr>
+        <tr>
+          <td>Proficient</td>
+          <td>70–84</td>
+          <td>17</td>
+          <td>16.5%</td>
+        </tr>
+        <tr>
+          <td>Advanced</td>
+          <td>85–100</td>
+          <td>7</td>
+          <td>6.8%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="subheading">Summative essay proficiency bands (all students, n = 103)</h3>
+    <table aria-label="Summative essay proficiency bands">
+      <thead>
+        <tr>
+          <th>Band</th>
+          <th>Score range (%)</th>
+          <th>Number of students</th>
+          <th>Percent of students</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Below basic</td>
+          <td>0–59</td>
+          <td>17</td>
+          <td>16.5%</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>60–74</td>
+          <td>38</td>
+          <td>36.9%</td>
+        </tr>
+        <tr>
+          <td>Proficient</td>
+          <td>75–89</td>
+          <td>32</td>
+          <td>31.1%</td>
+        </tr>
+        <tr>
+          <td>Advanced</td>
+          <td>90–100</td>
+          <td>16</td>
+          <td>15.5%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="table-note">
+      Note: The share of students in the below basic band dropped from about 40% to about 16%. 
+      Students at proficient or advanced increased from roughly 23% to just over 45%.
     </p>
 
     <!-- Section 4: Outcomes by student group -->
     <h2 class="section-title">Outcomes by student group</h2>
 
     <p>
-      To better understand equity and access, I looked at how different student groups performed from pre assessment to essay. 
-      Group counts are approximate and can overlap (for example, a student can be both multilingual and chronically absent).
+      The table below highlights key student groups that informed instructional planning. Group membership can overlap, 
+      for example a student may be both multilingual and chronically absent.
     </p>
 
     <table aria-label="Outcomes by student group">
       <thead>
         <tr>
           <th>Group</th>
-          <th>Approx. N</th>
-          <th class="col-pre">Pre assessment avg</th>
-          <th class="col-post">Argument essay avg</th>
-          <th class="col-growth">Growth (points)</th>
+          <th>Approximate number of students</th>
+          <th>Pre assessment average (%)</th>
+          <th>Summative essay average (%)</th>
+          <th>Growth (percentage points)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><span class="group-label">Multilingual learners & students with IEPs</span></td>
-          <td>≈28</td>
-          <td class="col-pre">≈44%</td>
-          <td class="col-post">≈63%</td>
-          <td class="col-growth">+19</td>
+          <td><strong>Multilingual learners and students with IEPs</strong></td>
+          <td>30</td>
+          <td>44</td>
+          <td>64</td>
+          <td>+20</td>
         </tr>
         <tr>
-          <td><span class="group-label">Chronically absent (10+ days in term)</span></td>
-          <td>≈14</td>
-          <td class="col-pre">≈38%</td>
-          <td class="col-post">≈57%</td>
-          <td class="col-growth">+19</td>
+          <td><strong>Chronically absent (10+ days in term)</strong></td>
+          <td>15</td>
+          <td>38</td>
+          <td>57</td>
+          <td>+19</td>
         </tr>
         <tr>
-          <td><span class="group-label">Regular attendance, non-IEP / non-MLL</span></td>
-          <td>≈61</td>
-          <td class="col-pre">≈60%</td>
-          <td class="col-post">≈76%</td>
-          <td class="col-growth">+16</td>
+          <td><strong>Regular attendance, non MLL / non IEP</strong></td>
+          <td>70</td>
+          <td>60</td>
+          <td>76</td>
+          <td>+16</td>
         </tr>
       </tbody>
     </table>
 
-    <p class="note">
-      Supports for multilingual learners and students with IEPs were coordinated with special education teacher Hannah Bennett so that scaffolds in my World History class
-      aligned with what students were practicing in her class.
+    <p class="table-note">
+      Note: Group counts are approximate and not mutually exclusive. Some multilingual and IEP students are also counted in the chronically absent group. 
+      The regular attendance group includes students with no MLL or IEP designation who met attendance expectations.
+    </p>
+
+    <!-- Section 5: Pre assessment item snapshot -->
+    <h2 class="section-title">Pre assessment item snapshot</h2>
+
+    <p>
+      The table below summarizes the structure of the diagnostic pre assessment. Item level averages are not the focus of this packet, 
+      but are provided to show how the baseline measure was constructed.
+    </p>
+
+    <table aria-label="Pre assessment items">
+      <thead>
+        <tr>
+          <th>Item type</th>
+          <th>Number of items</th>
+          <th>Focus</th>
+          <th>Scoring detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Multiple choice</td>
+          <td>8</td>
+          <td>
+            Core Enlightenment concepts, such as natural rights, social contract, consent of the governed, separation of powers, 
+            and basic ideas about the purpose of government.
+          </td>
+          <td>
+            One point per correct answer. These items provided a quick read on prior knowledge and misconceptions.
+          </td>
+        </tr>
+        <tr>
+          <td>Matching</td>
+          <td>1 cluster</td>
+          <td>
+            Matching key thinkers (Locke, Montesquieu, Rousseau, Voltaire) to simplified descriptions of their ideas.
+          </td>
+          <td>
+            Partial credit allowed for partially correct matches. Used mainly to see if students recognized names and core ideas.
+          </td>
+        </tr>
+        <tr>
+          <td>Short constructed response</td>
+          <td>1</td>
+          <td>
+            Students responded to a simplified Locke style prompt: Why might Enlightenment writers argue that people have 
+            the right to challenge their government?
+          </td>
+          <td>
+            Scored on a simple 0–3 scale for clarity, use of the text, and basic explanation. This writing sample informed early grouping 
+            and the amount of modeling needed.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="table-note">
+      Note: Pre assessment scores were combined into a single percentage score for each student to serve as a baseline for growth.
     </p>
   </div>
 </body>
