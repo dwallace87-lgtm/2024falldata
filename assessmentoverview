@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enlightenment & Revolution – Assessment Overview</title>
+  <style>
+    :root {
+      --navy: #16355b;
+      --teal: #0f8c79;
+      --soft-gray: #f4f5fb;
+      --light-blue: #e6f2ff;
+      --accent-gold: #f9b24c;
+      --accent-green: #2e7d32;
+      --text-main: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 4px;
+    }
+
+    header {
+      border-bottom: 3px solid var(--light-blue);
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: var(--teal);
+      font-weight: 500;
+    }
+
+    .chip-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--soft-gray);
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    h2.section-title {
+      margin: 26px 0 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--light-blue), #ffffff);
+      border-left: 4px solid var(--teal);
+    }
+
+    h3.subheading {
+      margin: 16px 0 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    p {
+      margin: 4px 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 170px) minmax(0, 1fr);
+      gap: 4px 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--soft-gray);
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .info-value {
+      color: var(--text-main);
+    }
+
+    .callout {
+      display: flex;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #e9f9f3;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-green);
+      margin: 6px 0 14px;
+      font-size: 0.9rem;
+    }
+
+    .callout-tag {
+      font-weight: 700;
+      color: var(--accent-green);
+      min-width: 130px;
+    }
+
+    .callout-text {
+      color: #234432;
+    }
+
+    ul.bullet-tight {
+      margin: 4px 0 10px 18px;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    ul.bullet-tight li {
+      margin-bottom: 4px;
+    }
+
+    .tagged-text-strong {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .footnote {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #777777;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 10px;
+      }
+
+      .page {
+        padding-bottom: 24px;
+      }
+
+      .info-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .callout {
+        flex-direction: column;
+      }
+
+      .callout-tag {
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Enlightenment & Revolution – Assessment Overview</h1>
+      <p class="subtitle">
+        Franklin County High School • 10th Grade World History • 2024–2025 School Year
+      </p>
+      <div class="chip-row">
+        <span class="chip">Teacher: Donald Wallace</span>
+        <span class="chip">Total students: 103</span>
+        <span class="chip">Inquiry design model (C3)</span>
+      </div>
+    </header>
+
+    <!-- Context and unit snapshot -->
+    <h2 class="section-title">Context and unit snapshot</h2>
+
+    <div class="info-grid">
+      <div class="info-label">Course</div>
+      <div class="info-value">
+        10th Grade World History, Franklin County High School, Frankfort, Kentucky
+      </div>
+
+      <div class="info-label">Team context</div>
+      <div class="info-value">
+        I teach World History as part of a small team. During the 2024–2025 school year I ran this inquiry in parallel with my colleague 
+        <strong>Stephanie Morrell</strong>, who taught her own World History section. We planned around the same Kentucky Academic Standards 
+        and general pacing, but this performance task and data set reflect <strong>only my 103 students</strong> across four sections.
+      </div>
+
+      <div class="info-label">Unit focus</div>
+      <div class="info-value">
+        An inquiry on the Enlightenment and political revolutions centered on the compelling question 
+        <strong>"How did Reason lead to Revolution?"</strong>
+      </div>
+
+      <div class="info-label">Timeline</div>
+      <div class="info-value">
+        Early in the first semester, over about three weeks. For most students this was their 
+        <strong>first formal historical argument essay</strong> of the year.
+      </div>
+
+      <div class="info-label">Standards alignment</div>
+      <div class="info-value">
+        Aligned to the Kentucky Academic Standards for Social Studies (High School World History) in areas that address the Enlightenment, 
+        changing views of government and legitimacy, political revolutions, and inquiry based argument writing. The performance task asked 
+        students to interpret sources, trace cause and effect, and construct an evidence based written argument.
+      </div>
+    </div>
+
+    <p>
+      I used an Inquiry Design Model structure for this work. Students engaged with a compelling question, several supporting questions, 
+      primary and secondary sources, and a final argument performance task. The goal was to introduce them to the kind of inquiry and 
+      writing Kentucky expects in high school World History, while still giving them enough scaffolding to feel successful early in the year.
+    </p>
+
+    <!-- Students and classes -->
+    <h2 class="section-title">Students and classes included</h2>
+
+    <p>
+      This assessment overview covers <strong>103 students</strong> across four World History sections:
+    </p>
+
+    <ul class="bullet-tight">
+      <li>Period 1 – 26 students</li>
+      <li>Period 3 – 29 students</li>
+      <li>Period 5 – 29 students</li>
+      <li>Period 7 – 19 students (smaller class with a mix of students who needed additional support and a few strong peer models)</li>
+    </ul>
+
+    <p>
+      These rosters included multilingual learners, students with IEPs, and students with significant attendance challenges. I collaborated 
+      with <strong>Hannah Bennett</strong>, one of our special education teachers, who works with several of these students during her class 
+      period. Hannah and I stayed in touch about organizers, vocabulary supports, and expectations so that students felt the connection between 
+      her class and mine rather than experiencing two completely separate worlds.
+    </p>
+
+    <!-- Learning goals -->
+    <h2 class="section-title">Learning goals</h2>
+
+    <div class="callout">
+      <div class="callout-tag">Big idea</div>
+      <div class="callout-text">
+        I wanted students to move beyond memorizing names and dates and start to explain how ideas travel, how people challenge power, 
+        and how revolutions connect to arguments about rights and government.
+      </div>
+    </div>
+
+    <h3 class="subheading">Content goals</h3>
+    <ul class="bullet-tight">
+      <li>
+        Describe key Enlightenment ideas, such as natural rights, social contract, separation of powers, and religious tolerance, in accessible language.
+      </li>
+      <li>
+        Connect Enlightenment ideas to political revolutions, especially the American and French Revolutions, by explaining how new ideas about 
+        rights and government challenged older systems.
+      </li>
+      <li>
+        Recognize that Enlightenment and revolution look different in different regions, and that the outcomes of revolutions are not always simple or positive.
+      </li>
+    </ul>
+
+    <h3 class="subheading">Disciplinary and inquiry goals</h3>
+    <ul class="bullet-tight">
+      <li>
+        Work with short, adapted primary and secondary sources to pull out main ideas and relevant evidence.
+      </li>
+      <li>
+        Explain cause and effect in writing, not just list events. For example, explain how natural rights theory can lead people to question a monarch.
+      </li>
+      <li>
+        Use an argument structure that includes a clear claim, supporting reasons, and specific evidence from sources.
+      </li>
+    </ul>
+
+    <h3 class="subheading">Literacy and writing goals</h3>
+    <ul class="bullet-tight">
+      <li>
+        Plan and write a multi paragraph argument essay that answers the compelling question and stays focused on that question.
+      </li>
+      <li>
+        Use at least two sources to support the argument and explain the evidence rather than just dropping in quotes.
+      </li>
+      <li>
+        Organize writing with basic transitions and maintain readable sentence structure, even if students are still building more advanced style.
+      </li>
+    </ul>
+
+    <!-- Assessment plan -->
+    <h2 class="section-title">Assessment plan and evidence sources</h2>
+
+    <h3 class="subheading">Diagnostic pre assessment</h3>
+    <p>
+      Before we launched the full inquiry, students completed a short pre assessment on Enlightenment and government to give me a baseline. 
+      The pre assessment included:
+    </p>
+    <ul class="bullet-tight">
+      <li><strong>Eight multiple choice questions</strong> on core ideas like natural rights, social contract, and the purpose of government.</li>
+      <li>
+        <strong>One matching cluster</strong> that asked students to connect thinkers (for example Locke, Montesquieu, Rousseau, Voltaire) to simplified 
+        descriptions of their ideas.
+      </li>
+      <li>
+        <strong>One short constructed response</strong> that asked: In your own words, why might Enlightenment writers argue that people have 
+        the right to challenge their government?
+      </li>
+    </ul>
+    <p>
+      Students had access to a short adapted passage or textbook style explanation, but they did not receive sentence starters for this pre assessment. 
+      I wanted a clear picture of how they explained ideas without heavy scaffolds yet. Those scores became the baseline in the data file.
+    </p>
+
+    <h3 class="subheading">Formative tasks during the inquiry</h3>
+    <p>
+      Throughout the unit, students completed several formative tasks that built toward the final essay:
+    </p>
+    <ul class="bullet-tight">
+      <li>
+        A jigsaw reading on major Enlightenment thinkers, where each group read a short adapted text and then taught their classmates the 
+        main idea in simple language.
+      </li>
+      <li>
+        Source analysis stations that asked students to highlight evidence and answer focused questions about how each source viewed government and power.
+      </li>
+      <li>
+        A planning organizer that guided students to write a claim, list reasons, and match each reason to at least one source.
+      </li>
+      <li>
+        A practice body paragraph, written together in class, that modeled how to connect an Enlightenment idea to a specific change during a revolution.
+      </li>
+    </ul>
+    <p>
+      These formative checkpoints were scored for completion and basic quality, and they helped me decide where to slow down or re model 
+      before the summative essay.
+    </p>
+
+    <h3 class="subheading">Summative performance task</h3>
+    <p>
+      The culminating task for this inquiry was a written argument essay in response to the question
+      <strong>"How did Reason lead to Revolution?"</strong>
+      Students wrote in class using their notes and organizers. They were expected to:
+    </p>
+    <ul class="bullet-tight">
+      <li>State a clear claim that directly answers the question.</li>
+      <li>Use at least two sources from the unit, cited in simple, student friendly ways.</li>
+      <li>Explain how Enlightenment ideas influenced political revolutions, not just list facts.</li>
+      <li>Organize their writing into an introduction, body paragraphs, and a brief conclusion.</li>
+    </ul>
+    <p>
+      I scored essays with a four part rubric that focused on <strong>claim and focus, use of evidence, historical reasoning,</strong> and 
+      <strong>writing conventions</strong>. This is the same rubric I planned to use again later in the course so I could track growth over time.
+    </p>
+
+    <!-- Support and differentiation -->
+    <h2 class="section-title">Support, differentiation, and collaboration</h2>
+
+    <h3 class="subheading">Support for multilingual learners and students with IEPs</h3>
+    <p>
+      For multilingual learners and students with IEPs, I created adjusted versions of the graphic organizers with sentence stems and small word banks. 
+      I also front loaded key vocabulary in short warm ups so students could hear and use the language before they saw it in the texts. During the writing process, 
+      I pulled small groups to rehearse ideas out loud before they tried to put everything on paper.
+    </p>
+    <p>
+      I coordinated these supports with <strong>Hannah Bennett</strong>, who works with several of the same students in a different class period. 
+      We shared organizers and talked about which sentence stems and routines were working, so students felt some continuity instead of starting from scratch 
+      every time they shifted from her room to mine.
+    </p>
+
+    <h3 class="subheading">Support for attendance challenges</h3>
+    <p>
+      I also planned short catch up pathways for students with significant absences. For each key formative task, I created a shorter version that a student 
+      could complete during advisory or at home. This allowed them to at least experience the core reading and writing moves before they attempted the essay. 
+      Those catch up tasks are referenced in my data and analysis documents, since attendance shows up clearly in the outcomes.
+    </p>
+
+    <!-- How this document fits into the packet -->
+    <h2 class="section-title">How this overview connects to the data and analysis</h2>
+
+    <p>
+      This overview is the first piece in a three part packet:
+    </p>
+
+    <ul class="bullet-tight">
+      <li>
+        <strong>Document 1 – Assessment Overview</strong> (this page) describes the context, goals, and assessment design for the Enlightenment and Revolution inquiry.
+      </li>
+      <li>
+        <strong>Document 2 – Assessment Data</strong> provides the class averages, rubric distributions, proficiency bands, and group level results for all 103 students.
+      </li>
+      <li>
+        <strong>Document 3 – Analysis and Instructional Planning</strong> explains what I learned from the data and how I adjusted instruction for the next unit.
+      </li>
+    </ul>
+
+    <p>
+      Together, these three parts show my students early in the year, the work they produced, and the way I respond to real data rather than the version 
+      of the class I might imagine in my head.
+    </p>
+
+    <p class="footnote">
+      Note: Numbers and group counts in this packet reflect assessment data for the 2024–2025 school year for my World History sections at Franklin County High School.
+    </p>
+  </div>
+</body>
+</html>
