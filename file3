@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enlightenment & Revolution – Assessment Analysis</title>
+  <style>
+    :root {
+      --navy: #16355b;
+      --teal: #0f8c79;
+      --soft-gray: #f4f5fb;
+      --light-blue: #e6f2ff;
+      --accent-gold: #f9b24c;
+      --accent-green: #2e7d32;
+      --text-main: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: linear-gradient(135deg, #f2f4ff, #fdfdfd);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px 36px 40px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    header {
+      border-bottom: 3px solid var(--light-blue);
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: var(--teal);
+      font-weight: 500;
+    }
+
+    .chip-row {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--soft-gray);
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    h2.section-title {
+      margin: 26px 0 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--light-blue), #ffffff);
+      border-left: 4px solid var(--teal);
+    }
+
+    h3.subheading {
+      margin: 16px 0 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    p {
+      margin: 4px 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+      gap: 4px 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--soft-gray);
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .info-value {
+      color: var(--text-main);
+    }
+
+    .callout {
+      display: flex;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #fff7e9;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-gold);
+      margin: 6px 0 14px;
+      font-size: 0.9rem;
+    }
+
+    .callout-tag {
+      font-weight: 700;
+      color: #995200;
+      min-width: 120px;
+    }
+
+    .callout-text {
+      color: #4b3a24;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 8px 0 14px;
+      font-size: 0.9rem;
+    }
+
+    th,
+    td {
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--light-blue);
+      color: var(--navy);
+      font-weight: 700;
+      border-bottom: 1px solid #d4e4ff;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--soft-gray);
+    }
+
+    tr:nth-child(odd) td {
+      background: #ffffff;
+    }
+
+    .tagged-text-strong {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .adjustment-list {
+      margin: 4px 0 0 0;
+      padding-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    .adjustment-list li {
+      margin-bottom: 8px;
+    }
+
+    .adjustment-title {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .footnote {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #777777;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 22px 18px 26px;
+      }
+
+      .info-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .callout {
+        flex-direction: column;
+      }
+
+      .callout-tag {
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Analysis of Assessment Scores and Instructional Planning</h1>
+      <p class="subtitle">
+        Franklin County High School &nbsp;•&nbsp; 10th Grade World History &nbsp;•&nbsp; Enlightenment and Revolution Inquiry
+      </p>
+      <div class="chip-row">
+        <span class="chip">Teacher: Donald Wallace</span>
+        <span class="chip">Location: Frankfort, Kentucky</span>
+        <span class="chip">First semester, early in the year</span>
+      </div>
+    </header>
+
+    <!-- Context -->
+    <h2 class="section-title">Context and assessment overview</h2>
+
+    <div class="info-grid">
+      <div class="info-label">Teacher</div>
+      <div class="info-value">Donald Wallace</div>
+      <div class="info-label">School</div>
+      <div class="info-value">Franklin County High School, Frankfort, Kentucky</div>
+      <div class="info-label">Course</div>
+      <div class="info-value">10th Grade World History</div>
+      <div class="info-label">Unit focus</div>
+      <div class="info-value">
+        Enlightenment and Revolution inquiry centered on the question
+        <strong>"How did Reason lead to Revolution?"</strong>
+      </div>
+      <div class="info-label">Timing</div>
+      <div class="info-value">
+        First semester. For most students this was their
+        <strong>first formal historical argument essay</strong> of the year.
+      </div>
+    </div>
+
+    <p>
+      Students completed a short diagnostic pre assessment on core Enlightenment ideas and then wrote a structured argument essay
+      responding to the compelling question
+      <strong>"How did Reason lead to Revolution?"</strong>
+      using evidence from texts we read together. The goal here is not to present end-of-year writing, but to show
+      realistic early-year growth in my classes at Franklin County and to explain how I used the results to shape the next unit.
+    </p>
+
+    <!-- What the data show -->
+    <h2 class="section-title">What the data show</h2>
+
+    <div class="callout">
+      <div class="callout-tag">Big picture</div>
+      <div class="callout-text">
+        Across three sections, the overall average moved from about
+        <strong>55%</strong> on the pre assessment to
+        <strong>72%</strong> on the first argument essay. A lot of students
+        moved out of the lowest band, but many are still in the developing range and need more practice with reading and writing
+        about history.
+      </div>
+    </div>
+
+    <h3 class="subheading">Overall growth across classes</h3>
+    <p>
+      A total of <strong>75 students</strong> completed both the pre assessment and the summative essay. Class averages on the
+      pre assessment ranged from <strong>52%</strong> to <strong>58%</strong>. Summative essay averages ranged from
+      <strong>70%</strong> to <strong>75%</strong>. When I look at all students together, the average increased from about
+      <strong>55%</strong> on the pre assessment to <strong>72%</strong> on the essay, a gain of roughly
+      <strong>17 points</strong>.
+      For a first attempt at this kind of writing, early in the year, that growth is meaningful, even though there is still plenty
+      of room to grow.
+    </p>
+
+    <h3 class="subheading">Movement across proficiency bands</h3>
+    <p>
+      The pre assessment data made it clear that many students were starting from a low baseline. Roughly
+      <strong>40%</strong> of students scored in the below basic range, and only about <strong>23%</strong> were at proficient
+      or advanced. On the summative essay, the percentage of students in the below basic band dropped to about
+      <strong>16%</strong>, while the share of students at proficient or advanced rose to a little over
+      <strong>45%</strong>. Students in the basic band remained the largest group.
+    </p>
+
+    <table aria-label="Proficiency bands before and after">
+      <thead>
+        <tr>
+          <th>Band</th>
+          <th>Pre assessment (approx.)</th>
+          <th>Summative essay (approx.)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Below basic</td>
+          <td>About 40%</td>
+          <td>About 16%</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>Roughly mid 30s%</td>
+          <td>High 30s%</td>
+        </tr>
+        <tr>
+          <td>Proficient</td>
+          <td>About 18%</td>
+          <td>Low 30s%</td>
+        </tr>
+        <tr>
+          <td>Advanced</td>
+          <td>About 5%</td>
+          <td>Low teens%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Taken together, this tells me that the unit helped a significant number of students move out of the lowest band,
+      which matters for confidence and access. At the same time, many students are still in the middle range and need continued
+      support to build more precise reading and writing skills.
+    </p>
+
+    <h3 class="subheading">Strengths and needs by rubric skill</h3>
+    <p>
+      Each essay was scored with a four-part rubric on a 1-4 scale (Beginning, Developing, Proficient, Advanced). Looking at the
+      categories separately gave me a clearer picture of what students could already do and where they were struggling.
+    </p>
+
+    <table aria-label="Rubric skill snapshot">
+      <thead>
+        <tr>
+          <th>Rubric skill</th>
+          <th>Overall takeaway from the first essay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Claim and focus</strong></td>
+          <td>
+            A little more than half of students scored at proficient or advanced. Most could state a basic answer to the question
+            and stick with it, even if their reasoning still needed more depth.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Use of evidence</strong></td>
+          <td>
+            Around 44% of students reached proficient or advanced. Many essays included general statements like
+            "The Enlightenment brought new ideas" without naming specific thinkers or documents. Students need more practice
+            pulling concrete evidence from the texts we use in class.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Historical reasoning</strong></td>
+          <td>
+            This was the weakest category, with only about 37% of students at proficient or above. A common pattern was listing
+            an Enlightenment idea and then naming a revolution without clearly explaining the cause and effect relationship.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Writing conventions</strong></td>
+          <td>
+            This was comparatively stronger. About 60% of students were proficient or advanced. Most could organize their writing
+            into basic paragraphs and write understandable sentences, which is a solid starting point for the first essay of the year.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="subheading">Patterns for different student groups</h3>
+
+    <p>
+      <span class="tagged-text-strong">Multilingual learners and students with IEPs.</span>
+      These students started well below the overall average, with pre assessment scores in the low to mid 40s. On the essay,
+      their averages rose into the low to mid 60s. They actually made slightly larger gains than the class as a whole,
+      which suggests that the vocabulary supports and structured writing organizers built into the unit were helpful.
+      Even with that growth, they still scored below peers, so they remain a focal group for the next unit.
+    </p>
+
+    <p>
+      <span class="tagged-text-strong">Chronically absent students.</span>
+      Students who had missed ten or more days during the term had the lowest scores overall. Their pre assessment average was in
+      the high 30s, and their essay average rose to the high 50s. They did grow about 19 points, but many remained in the below
+      basic or basic bands. When I compared their scores with completion data for formative tasks, it was clear that inconsistent
+      attendance meant they missed key modeling and practice.
+    </p>
+
+    <p>
+      <span class="tagged-text-strong">Students with regular attendance and no IEP or MLL designation.</span>
+      These students started higher and ended higher, with averages rising from around 60% to the mid 70s. They still showed
+      growth, but they also highlighted the gap that can open up quickly if other students do not receive enough targeted support.
+    </p>
+
+    <!-- How I used the results -->
+    <h2 class="section-title">How I used the results to adjust instruction</h2>
+
+    <p>
+      After reviewing the numbers and reading through a sample of essays, I made some specific choices about what needed to change
+      in the next unit on revolutions and nation building. The main goal was to keep the structure that helped students grow, while
+      tightening the parts that left too much room for vague or surface-level writing.
+    </p>
+
+    <ul class="adjustment-list">
+      <li>
+        <span class="adjustment-title">Re teaching historical reasoning with step-by-step modeling.</span><br />
+        Because historical reasoning was the lowest scoring rubric category, I designed an additional mini lesson that walked
+        students through one example in detail. We took a short excerpt from John Locke and a short description of the American
+        Revolution and wrote out, step by step, how the idea of natural rights could lead people to question a monarchy. I used
+        color coding and sentence stems so students could see the difference between listing facts and actually explaining cause
+        and effect.
+      </li>
+      <li>
+        <span class="adjustment-title">Building stronger routines for using evidence.</span><br />
+        To address weak evidence use, I adjusted my graphic organizers so that students had to write the title or author of the
+        source in one box and then pull a short quote or paraphrase into another box before planning their paragraphs. In the next
+        unit, I also built in a simple routine called "Name it, Use it, Explain it." Students first name the source, then use a
+        specific detail, and finally explain how it supports their claim. That routine mirrors the rubric language and helps them
+        see what strong evidence actually looks like in their writing.
+      </li>
+      <li>
+        <span class="adjustment-title">Adding targeted scaffolds for multilingual learners and students with IEPs.</span><br />
+        For multilingual learners and students with IEPs, I created modified versions of the writing organizer with sentence
+        starters and a small word bank. I also planned to introduce key vocabulary in a short warm up instead of waiting until
+        we were already in the reading. In small groups, we practiced turning simple notes into complete sentences together so
+        that students could experience some success before moving into independent writing.
+      </li>
+      <li>
+        <span class="adjustment-title">Creating catch-up pathways for chronically absent students.</span><br />
+        Because absences clearly affected performance, I pulled the most important formative tasks into short catch-up packets.
+        The packets are designed so that a student can complete them during advisory or at home and still get the essential
+        reading and writing practice they missed. I also started keeping a simple tracking sheet for who still needs to finish
+        which key tasks.
+      </li>
+    </ul>
+
+    <!-- Ongoing monitoring -->
+    <h2 class="section-title">Ongoing monitoring and goals</h2>
+
+    <p>
+      I am using the same four-part argument rubric for the next major writing task so that I can compare results over time.
+      My goal is to increase the percentage of students who are proficient or advanced in historical reasoning from about
+      <strong>37%</strong> to at least <strong>60%</strong> by mid year, and to narrow the gap between focal student groups and
+      the overall average. I also plan to share a simplified version of this data with students so they can see their own growth
+      and set personal goals for the next essay.
+    </p>
+
+    <p>
+      The scores from this unit are not where I ultimately want them to be, but they give me a realistic early-year snapshot of
+      my students at Franklin County High School. This analysis has pushed me to be more intentional about modeling, scaffolding,
+      and follow up support as we move deeper into the World History curriculum.
+    </p>
+
+    <p class="footnote">
+      Note: Percentages and bands in this document are drawn from sample classroom data and are presented here to illustrate
+      student growth and instructional decision making.
+    </p>
+  </div>
+</body>
+</html>
