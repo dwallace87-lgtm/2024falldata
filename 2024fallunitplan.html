@@ -18,6 +18,7 @@
       --segment-independent: #c96f2c;
       --segment-share: #7a3fb1;
       --segment-materials: #555555;
+      --highlight-bg: #fff6b0;
     }
 
     * {
@@ -33,7 +34,11 @@
       line-height: 1.5;
     }
 
-    /* Top banner like IDM style */
+    .highlight {
+      background: var(--highlight-bg);
+      padding: 0 2px;
+    }
+
     .top-strip {
       border-top: 3px solid var(--blue-mid);
     }
@@ -78,7 +83,6 @@
       background: #ffffff;
     }
 
-    /* Overview / top table like IDM */
     .overview-grid {
       display: grid;
       grid-template-columns: 220px minmax(0, 1fr);
@@ -120,7 +124,6 @@
       margin-bottom: 18px;
     }
 
-    /* Day cards styled like the “Supporting Question” boxes */
     .days-grid {
       display: flex;
       flex-direction: column;
@@ -193,7 +196,15 @@
       font-size: 0.9rem;
     }
 
-    /* Segment-specific header colors */
+    .segment-body ul {
+      margin: 0 0 0 18px;
+      padding: 0;
+    }
+
+    .segment-body li {
+      margin-bottom: 4px;
+    }
+
     .mini-lesson .segment-header {
       background: var(--segment-mini);
     }
@@ -210,7 +221,6 @@
       background: var(--segment-materials);
     }
 
-    /* Standards table */
     .standards-table {
       width: 100%;
       border-collapse: collapse;
@@ -259,23 +269,51 @@
     <div class="overview-grid">
       <div class="overview-label">Inquiry Standard</div>
       <div class="overview-value">
-        [Insert primary standard here, for example: analyze social, economic and
-        political ideas that influenced 18th and 19th century revolutions.]
+        <strong><u>Era7.2.WH.2</u></strong> – <span class="highlight">Analyze the social, economic, and political ideas that
+        influenced 18th- and 19th-century revolutions.</span>
       </div>
 
       <div class="overview-label">Staging the Compelling Question</div>
       <div class="overview-value">
-        [Insert brief description of how you will introduce the concept of
-        inalienable rights and launch the compelling question with key excerpts.]
+        Discuss the concept of <strong>inalienable rights</strong> using short
+        excerpts from <em>John Locke’s Two Treatises of Government</em>, the
+        <em>Declaration of Independence</em>, and the
+        <em>Declaration of the Rights of Man and Citizen</em>. Use these texts
+        to launch the compelling question:
+        <span class="highlight"><strong>“How did Reason lead to Revolution?”</strong></span>
       </div>
     </div>
 
     <h2 class="section-heading">Unit Overview</h2>
     <div class="intro-text">
-      [Insert a short overview of the unit here. You can mention that the unit
-      adapts a C3 Teachers inquiry on Enlightenment and Revolutions, has 13
-      instructional days, follows a workshop model, and is aligned to Kentucky
-      Academic Standards. Keep this in your own voice.]
+      This <strong>13–15 day inquiry unit</strong>, based on the C3
+      <em>“How did Reason lead to Revolution?”</em> lesson and the Arkansas C3
+      model, guides my 10th graders through the <strong>Age of Enlightenment</strong> and its
+      revolutionary impact. We begin with the compelling question
+      <span class="highlight"><strong>“How did Reason lead to Revolution?”</strong></span>
+      and scaffold supporting questions across the unit.
+      <br /><br />
+      Each day follows a <strong>workshop model</strong> –
+      <u>mini-lesson</u>, <u>guided practice</u>,
+      <u>independent work</u>, and <u>share/closure</u> – to keep students
+      actively engaged. I integrate accessible primary sources (for example,
+      <strong>Locke</strong>, the <strong>Declaration of Independence</strong>, and the
+      <strong>Rights of Man</strong>) and visuals from the C3 curriculum, adapting
+      them for my diverse learners (including <strong>SPED</strong> and
+      <strong>MLL</strong> students).
+      <br /><br />
+      Frequent <strong>formative checks</strong> (notebook checks, quick-writes,
+      evidence charts) let me monitor growth and make adjustments in real time.
+      The unit culminates in a <strong>summative argumentative essay</strong>
+      where students answer the compelling question with evidence from the unit.
+      Throughout, we align to <strong>Kentucky Academic Standards</strong>, including:
+      <span class="highlight"><strong>HS.WH.CE.4</strong> (causes of revolutions),
+      <strong>HS.WH.CH.6</strong> (changing views of government and legitimacy),
+      <strong>HS.WH.I.UC.3</strong> and <strong>HS.WH.I.CC.2</strong> (inquiry and argument skills),
+      and <strong>HS.WH.KH.1</strong> (connections to Kentucky history).</span>
+      My teacher voice is intentionally <strong>warm and encouraging</strong> – I
+      use “we” and “our class” language and constantly explain
+      <u>why</u> each activity helps them answer the big question.
     </div>
 
     <!-- Day by day layout -->
@@ -286,41 +324,141 @@
       <article class="day-card" id="day-1">
         <div class="day-header">
           <span class="day-label">Day 1</span>
-          <span class="day-short-title">[Insert focus, for example: Launch & Pre-assessment]</span>
+          <span class="day-short-title">
+            Introduction &amp; Inalienable Rights (Staging the Question)
+          </span>
         </div>
         <div class="day-body">
           <div class="day-focus">
-            Day focus: [Insert 1–2 sentence description of the instructional focus for this day.]
+            <strong>Day focus:</strong> Hook students with a visual of Enlightenment
+            life, introduce <span class="highlight">inalienable rights</span>, and pre-assess
+            what they already believe about rights and government.
           </div>
           <div class="segments-grid">
             <div class="segment-card mini-lesson">
               <div class="segment-header">Mini Lesson</div>
               <div class="segment-body">
-                [Insert mini lesson notes or bullet points.]
+                <ul>
+                  <li>
+                    Project an image of an <strong>18th-century salon</strong> (Madame
+                    Geoffrin’s salon, 1755) and ask,
+                    <em>“What might people in this scene be discussing – rights,
+                    government, something else?”</em>
+                  </li>
+                  <li>
+                    Use student observations to frame the
+                    <strong>Age of Reason</strong> as a time when people debated
+                    <strong>rights</strong> and <strong>power</strong>.
+                  </li>
+                  <li>
+                    Students complete a quick-write in their notebooks:
+                    <span class="highlight"><em>“What rights do you think everyone is
+                    born with? Give examples.”</em></span>
+                  </li>
+                  <li>
+                    Introduce <strong>natural / inalienable rights</strong> with
+                    examples (life, liberty, property, free speech, education).
+                  </li>
+                  <li>
+                    Explicitly reference
+                    <strong><u>HS.WH.CE.4</u></strong> (revolutions) and
+                    <strong><u>HS.WH.CH.6</u></strong> (changing views of government),
+                    explaining that these rights will later challenge kings and empires.
+                  </li>
+                  <li>
+                    Launch the compelling question:
+                    <span class="highlight"><strong>“How did Reason lead to
+                    Revolution?”</strong></span>
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div class="segment-card guided-practice">
               <div class="segment-header">Guided Practice</div>
               <div class="segment-body">
-                [Insert guided practice tasks and supports.]
+                <ul>
+                  <li>
+                    In small groups, students read short, adapted excerpts from:
+                    <strong>Document 1 – Locke’s Two Treatises</strong>,
+                    <strong>Document 2 – Declaration of Independence</strong>, and
+                    <strong>Document 3 – Declaration of the Rights of Man and
+                    Citizen</strong>.
+                  </li>
+                  <li>
+                    We do a <strong>think-aloud</strong> together on the board:
+                    underline phrases like
+                    <em>“life, liberty, property,” “pursuit of happiness,”
+                    “men are born and remain free and equal in rights.”</em>
+                  </li>
+                  <li>
+                    <strong>MLL/ELL support:</strong> bilingual glossary for key
+                    terms (e.g. “inalienable,” “charter,” “liberté”) and permission
+                    to use translation apps.
+                  </li>
+                  <li>
+                    <strong>SPED support:</strong> a partially completed
+                    <strong><u>Rights Chart</u></strong> organizer so students can
+                    record rights listed in each document without getting lost in the text.
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div class="segment-card independent-practice">
               <div class="segment-header">Independent Practice</div>
               <div class="segment-body">
-                [Insert independent work students complete.]
+                <ul>
+                  <li>
+                    In notebooks, students respond to the prompt:
+                    <span class="highlight"><em>“According to these documents, what
+                    are examples of inalienable rights?”</em></span>
+                  </li>
+                  <li>
+                    Students list at least <strong>three rights</strong>
+                    (for example, life, liberty, property, freedom of speech) and pose
+                    <strong>one question</strong> about rights (for example,
+                    <em>“Is education an inalienable right?”</em>).
+                  </li>
+                  <li>
+                    Teacher quickly scans a few responses while students write,
+                    treating this as a <strong>baseline formative check</strong>.
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div class="segment-card share-closure">
               <div class="segment-header">Share / Closure</div>
               <div class="segment-body">
-                [Insert how students share learning and how you close the lesson.]
+                <ul>
+                  <li>
+                    Invite a handful of students to read their lists aloud.
+                  </li>
+                  <li>
+                    Build a <strong>class chart of inalienable rights</strong>
+                    on chart paper; leave it posted for reference all unit.
+                  </li>
+                  <li>
+                    Make the Kentucky connection:
+                    <em>“These Enlightenment ideas about rights show up in
+                    early Kentucky documents as well – for example, the 1792
+                    Kentucky constitution guarantees <strong>freedom of religion</strong>.”</em>
+                    Connect this explicitly to <strong><u>HS.WH.KH.1</u></strong>.
+                  </li>
+                </ul>
               </div>
             </div>
+
             <div class="segment-card materials">
               <div class="segment-header">Materials / Resources</div>
               <div class="segment-body">
-                [List key texts, handouts, slides, and any tech you use.]
+                <ul>
+                  <li>Projected image of an Enlightenment salon (Madame Geoffrin).</li>
+                  <li>Adapted excerpts from Locke, Declaration of Independence, Rights of Man.</li>
+                  <li>“Rights Chart” organizer (modified version for SPED/MLL).</li>
+                  <li>Notebooks, chart paper, markers.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -331,32 +469,131 @@
       <article class="day-card" id="day-2">
         <div class="day-header">
           <span class="day-label">Day 2</span>
-          <span class="day-short-title">[Insert Day 2 focus]</span>
+          <span class="day-short-title">SQ1 – What was the Enlightenment?</span>
         </div>
         <div class="day-body">
           <div class="day-focus">
-            Day focus: [Insert description.]
+            <strong>Day focus:</strong> Define the <span class="highlight">Enlightenment
+            (Age of Reason)</span> and clarify how Enlightenment writers thought about
+            <strong>human rights</strong>.
           </div>
           <div class="segments-grid">
             <div class="segment-card mini-lesson">
               <div class="segment-header">Mini Lesson</div>
-              <div class="segment-body">[Mini lesson placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Open with a short <strong>video clip or timeline</strong> that
+                    situates the Enlightenment between the Scientific Revolution and
+                    the age of revolutions.
+                  </li>
+                  <li>
+                    On the board, write
+                    <span class="highlight"><strong>“Enlightenment = Age of Reason”</strong></span>
+                    and briefly unpack what “reason” meant in this context.
+                  </li>
+                  <li>
+                    Preview key vocabulary:
+                    <strong>reason, rights, philosopher, progress</strong>.
+                    Students echo or sketch symbols for each word.
+                  </li>
+                  <li>
+                    Connect to Kentucky’s inquiry focus
+                    (<strong><u>HS.WH.I.UC.1</u></strong>): explain that today they
+                    are <em>“gathering information from sources to define a key concept.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card guided-practice">
               <div class="segment-header">Guided Practice</div>
-              <div class="segment-body">[Guided practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Split the class into two reading groups:
+                    <strong>Group A</strong> reads a short
+                    <em>History.com</em> overview of the Enlightenment;
+                    <strong>Group B</strong> reads an adapted
+                    <em>LiveScience</em> article.
+                  </li>
+                  <li>
+                    Each group highlights lines that answer:
+                    <ul>
+                      <li><em>“What is the Enlightenment?”</em></li>
+                      <li><em>“What did it value?”</em></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Groups meet in mixed pairs to <strong>jigsaw</strong>:
+                    A partners explain their article to B, and vice versa.
+                  </li>
+                  <li>
+                    <strong>SPED support:</strong> provide reading guides with a
+                    simple frame:
+                    <em>“The Enlightenment believed ___ because ___.”</em>
+                    plus highlighters to keep track of main ideas.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card independent-practice">
               <div class="segment-header">Independent Practice</div>
-              <div class="segment-body">[Independent practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    In notebooks, students write a
+                    <strong>2–3 sentence definition</strong>:
+                    <em>“The Enlightenment was a time when people used reason and
+                    science to explain government, society, and nature...”</em>
+                  </li>
+                  <li>
+                    They also list at least <strong>two thinkers</strong> from the
+                    readings (for example, Locke, Rousseau, Voltaire, Montesquieu).
+                  </li>
+                  <li>
+                    Teacher circulates to confer and uses this as a quick
+                    <strong>formative checkpoint</strong> for SQ1 understanding.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card share-closure">
               <div class="segment-header">Share / Closure</div>
-              <div class="segment-body">[Closure placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Volunteers read their definitions; teacher notes recurring
+                    words like <strong>reason, progress, equality, skepticism of
+                    authority</strong>.
+                  </li>
+                  <li>
+                    Class collaborates on a one-sentence,
+                    <span class="highlight"><strong>“Our Working Definition of the
+                    Enlightenment.”</strong></span>
+                  </li>
+                  <li>
+                    Preview Day 3:
+                    <em>“Tomorrow we’ll build a chart of major Enlightenment
+                    thinkers so we can see who these people were and what they
+                    actually said about rights.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card materials">
               <div class="segment-header">Materials / Resources</div>
-              <div class="segment-body">[Materials placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>Short video or slide timeline of the Enlightenment.</li>
+                  <li>Adapted History.com and LiveScience articles.</li>
+                  <li>Vocabulary list / visuals for key terms.</li>
+                  <li>Notebooks, highlighters, reading guides.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -366,117 +603,505 @@
       <article class="day-card" id="day-3">
         <div class="day-header">
           <span class="day-label">Day 3</span>
-          <span class="day-short-title">[Insert Day 3 focus]</span>
+          <span class="day-short-title">SQ1 – Chart of Enlightenment Thinkers</span>
         </div>
         <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
+          <div class="day-focus">
+            <strong>Day focus:</strong> Build a <span class="highlight">chart of
+            major Enlightenment writers</span> (who they were, where they lived,
+            what they wrote, and what they believed about rights and society).
+          </div>
           <div class="segments-grid">
             <div class="segment-card mini-lesson">
               <div class="segment-header">Mini Lesson</div>
-              <div class="segment-body">[Mini lesson placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Quick warm-up: ask,
+                    <em>“Why do we still care about Enlightenment writers?”</em>
+                    and collect a few ideas.
+                  </li>
+                  <li>
+                    Introduce the <strong>Thinkers Chart</strong>:
+                    columns for <u>author, country, major work, big idea on
+                    rights/society</u>.
+                  </li>
+                  <li>
+                    Model a sample row for <strong>John Locke</strong> using
+                    yesterday’s text: fill in his name, England, one major work,
+                    and a short phrase like
+                    <em>“people have natural rights and can challenge government.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card guided-practice">
               <div class="segment-header">Guided Practice</div>
-              <div class="segment-body">[Guided practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Students work in groups of four. Each student is responsible
+                    for one writer (for example: Locke, Voltaire, Rousseau,
+                    Montesquieu).
+                  </li>
+                  <li>
+                    Using short excerpts from
+                    <strong>GMU Human Rights documents</strong>,
+                    <strong>Biography.com “Famous People”</strong>, and the
+                    LiveScience overview, they pull out:
+                    <u>where the person was from, one or two key works, and their
+                    central idea</u>.
+                  </li>
+                  <li>
+                    <strong>SPED/ELL scaffolds:</strong> groups receive partially
+                    filled charts with names and works already in place so they
+                    only have to complete “country” and “big idea” columns.
+                    Provide a small vocab box (for example,
+                    <em>“sovereign = ruler; civil liberties = freedoms”</em>).
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card independent-practice">
               <div class="segment-header">Independent Practice</div>
-              <div class="segment-body">[Independent practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Each student completes their assigned row and then copies
+                    summary information from their group members so everyone
+                    has a full <strong>Thinkers Chart</strong> in their notebook.
+                  </li>
+                  <li>
+                    If time runs short, students finish any missing pieces as
+                    homework.
+                  </li>
+                  <li>
+                    Teacher does a quick <strong>notebook spot-check</strong>,
+                    leaving short comments like
+                    <em>“Nice job naming ‘social contract’ for Rousseau”</em> or
+                    <em>“Check spelling of Montesquieu.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card share-closure">
               <div class="segment-header">Share / Closure</div>
-              <div class="segment-body">[Closure placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Post large chart papers around the room labeled with each
+                    thinker’s name. Students do a short
+                    <strong>Gallery Walk</strong> and jot one new fact from each.
+                  </li>
+                  <li>
+                    Debrief with a few focus questions:
+                    <em>“Who seems to have the most revolutionary idea about
+                    rights? Why?”</em>
+                  </li>
+                  <li>
+                    Exit ticket: students write a one-sentence definition of
+                    <strong>“natural rights”</strong> and
+                    <strong>“social contract”</strong> to confirm SQ1 vocabulary.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card materials">
               <div class="segment-header">Materials / Resources</div>
-              <div class="segment-body">[Materials placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>Thinkers Chart handout (student and poster versions).</li>
+                  <li>Short bios/excerpts for Locke, Voltaire, Rousseau, Montesquieu.</li>
+                  <li>Vocabulary support sheet.</li>
+                  <li>Markers, chart paper, sticky notes.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Repeat the same structure for Days 4–13 -->
-
+      <!-- Day 4 -->
       <article class="day-card" id="day-4">
         <div class="day-header">
           <span class="day-label">Day 4</span>
-          <span class="day-short-title">[Insert Day 4 focus]</span>
+          <span class="day-short-title">
+            SQ2 – Problems Critiqued by Enlightenment (Part 1)
+          </span>
         </div>
         <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
+          <div class="day-focus">
+            <strong>Day focus:</strong> Identify <span class="highlight">social,
+            economic, and political problems</span> that Enlightenment writers
+            criticized in the Old Regime.
+          </div>
           <div class="segments-grid">
             <div class="segment-card mini-lesson">
               <div class="segment-header">Mini Lesson</div>
-              <div class="segment-body">[Mini lesson placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Briefly review the <strong>Old Regime</strong>:
+                    draw a pyramid of the <u>Three Estates</u> and label who
+                    falls where.
+                  </li>
+                  <li>
+                    Preview vocabulary:
+                    <strong>monarchy, estate, inequality, censorship</strong>.
+                  </li>
+                  <li>
+                    Ask students:
+                    <em>“Looking at this system, what feels unfair or unstable?”</em>
+                    and record their ideas (oppression, injustice, corruption).
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card guided-practice">
               <div class="segment-header">Guided Practice</div>
-              <div class="segment-body">[Guided practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Students rotate through three stations:
+                    <strong>Station 1 – Locke</strong> (government &amp; property),
+                    <strong>Station 2 – Montesquieu</strong> (tyranny &amp; law),
+                    <strong>Station 3 – Adam Smith</strong> (economy &amp; poverty).
+                  </li>
+                  <li>
+                    At each station they answer:
+                    <span class="highlight"><em>“What problem does this author
+                    point out?”</em></span> and record it in an
+                    <strong>Issues Chart</strong> with columns:
+                    Social / Political / Economic.
+                  </li>
+                  <li>
+                    Example patterns:
+                    <em>Locke – taxation without consent (political); Smith –
+                    famine and unfair trade (economic); Montesquieu – abuse of
+                    absolute power (political/social).</em>
+                  </li>
+                  <li>
+                    <strong>SPED/ELL supports:</strong> simplified summaries at
+                    each station, a word bank of key terms, and a sentence frame
+                    such as
+                    <em>“Montesquieu says that ______ is a problem because ______.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card independent-practice">
               <div class="segment-header">Independent Practice</div>
-              <div class="segment-body">[Independent practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    After rotating, each student adds at least
+                    <strong>one entry</strong> to each column of a large class
+                    <strong>Issues Chart</strong> posted on the wall.
+                  </li>
+                  <li>
+                    Students complete an <strong>exit ticket</strong>:
+                    <em>“Name one social problem and one political problem
+                    mentioned by Locke or Montesquieu.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card share-closure">
               <div class="segment-header">Share / Closure</div>
-              <div class="segment-body">[Closure placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Review the completed class Issues Chart together, noting patterns:
+                    <strong>Political</strong> – abuses of monarchy, unfair laws;
+                    <strong>Economic</strong> – poverty, mercantilism;
+                    <strong>Social</strong> – inequality, censorship.
+                  </li>
+                  <li>
+                    Collect exit tickets as a quick <strong>reading check</strong>
+                    to see which problems students understood most clearly.
+                  </li>
+                  <li>
+                    Connect to performance task:
+                    <em>“These problems we identified will later help you match
+                    Enlightenment thinkers to the issues they criticized – and
+                    eventually to revolutions.”</em>
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card materials">
               <div class="segment-header">Materials / Resources</div>
-              <div class="segment-body">[Materials placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>Three Estates diagram (slide or handout).</li>
+                  <li>Station excerpts: Locke, Montesquieu, Adam Smith.</li>
+                  <li>Issues Chart (student + large class version).</li>
+                  <li>Word bank sheets, sentence frames, exit-ticket slips.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </article>
 
+      <!-- Day 5 -->
       <article class="day-card" id="day-5">
         <div class="day-header">
           <span class="day-label">Day 5</span>
-          <span class="day-short-title">[Insert Day 5 focus]</span>
+          <span class="day-short-title">SQ2 – Synthesis &amp; Peer Quiz Creation</span>
         </div>
         <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
+          <div class="day-focus">
+            <strong>Day focus:</strong> Synthesize Enlightenment critiques of
+            society and <span class="highlight">turn them into questions</span>
+            through student-created quizzes.
+          </div>
           <div class="segments-grid">
             <div class="segment-card mini-lesson">
               <div class="segment-header">Mini Lesson</div>
-              <div class="segment-body">[Mini lesson placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Quick review of the previous day’s Issues Chart. Students
+                    identify one example of a political, social, and economic problem.
+                  </li>
+                  <li>
+                    On the board, sketch a simple
+                    <strong>cause→effect</strong> link between an Enlightenment
+                    critique (for example, “taxation without consent”) and a
+                    revolutionary action (for example, “Boston Tea Party”).
+                  </li>
+                  <li>
+                    Explain that today they will design
+                    <strong>quiz questions</strong> to check their peers’
+                    understanding of these problems.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card guided-practice">
               <div class="segment-header">Guided Practice</div>
-              <div class="segment-body">[Guided practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    In small groups, students pick one category from the Issues
+                    Chart (<strong>social, economic, or political</strong>).
+                  </li>
+                  <li>
+                    Groups create <strong>2–3 multiple-choice or matching
+                    questions</strong> that connect authors to the problems they
+                    described.
+                  </li>
+                  <li>
+                    Teacher circulates and prompts deeper thinking:
+                    <em>“Can you phrase that question so it clearly shows what
+                    Montesquieu was worried about?”</em>
+                  </li>
+                  <li>
+                    <strong>SPED support:</strong> provide a quiz template with
+                    blank spots for question stems and answer choices to make
+                    formatting easier.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card independent-practice">
               <div class="segment-header">Independent Practice</div>
-              <div class="segment-body">[Independent practice placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Groups exchange quizzes and take another group’s quiz on
+                    mini-whiteboards or scrap paper.
+                  </li>
+                  <li>
+                    Students grade the quizzes quickly and note any confusing
+                    questions in the margins.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card share-closure">
               <div class="segment-header">Share / Closure</div>
-              <div class="segment-body">[Closure placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    As a class, go over quiz answers, clarifying any common
+                    misunderstandings about particular authors or issues.
+                  </li>
+                  <li>
+                    Reflection prompt in notebooks:
+                    <span class="highlight"><em>“Which Enlightenment author’s
+                    critique seems most important today, and why?”</em></span>
+                  </li>
+                  <li>
+                    Check that student notebooks include completed
+                    <strong>Issues Chart</strong> entries; note any students who
+                    need reteaching.
+                  </li>
+                </ul>
+              </div>
             </div>
+
             <div class="segment-card materials">
               <div class="segment-header">Materials / Resources</div>
-              <div class="segment-body">[Materials placeholder]</div>
+              <div class="segment-body">
+                <ul>
+                  <li>Class Issues Chart from Day 4.</li>
+                  <li>Quiz templates (paper or digital).</li>
+                  <li>Mini-whiteboards / dry erase markers (optional).</li>
+                  <li>Notebooks for reflections.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </article>
 
+      <!-- Day 6 -->
       <article class="day-card" id="day-6">
         <div class="day-header">
           <span class="day-label">Day 6</span>
-          <span class="day-short-title">[Insert Day 6 focus]</span>
+          <span class="day-short-title">
+            SQ3 – Inspiring Change (Ideas to Action)
+          </span>
         </div>
         <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
+          <div class="day-focus">
+            <strong>Day focus:</strong> Analyze how Enlightenment writers
+            <span class="highlight">inspired people to think differently</span>
+            about their social, political, and economic conditions and practice a
+            short, evidence-based paragraph.
+          </div>
           <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
+            <div class="segment-card mini-lesson">
+              <div class="segment-header">Mini Lesson</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Pose the question:
+                    <em>“How do ideas turn into motivation?”</em>
+                  </li>
+                  <li>
+                    Share a short quote, such as Voltaire’s
+                    <em>“Il faut cultiver notre jardin”</em> (“Let us cultivate
+                    our garden”) and unpack how it encourages
+                    <strong>personal and social improvement</strong>.
+                  </li>
+                  <li>
+                    Connect this to Kentucky’s civic skills standard
+                    <strong><u>HS.WH.I.CC.1</u></strong> – understanding and
+                    discussing how ideas guide actions.
+                  </li>
+                  <li>
+                    Preview vocabulary:
+                    <strong>inspire, catalyst, reform</strong>.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="segment-card guided-practice">
+              <div class="segment-header">Guided Practice (Jigsaw)</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Students form three teams:
+                    <strong>Team 1 – Locke</strong>,
+                    <strong>Team 2 – Montesquieu</strong>,
+                    <strong>Team 3 – Smith</strong> (using the same excerpts from SQ2).
+                  </li>
+                  <li>
+                    Each team identifies a line or short passage that sounds
+                    like a <strong>call for change</strong>.
+                  </li>
+                  <li>
+                    Teams paraphrase the quote and write a one-sentence
+                    <strong>“What they said”</strong> explanation
+                    (for example, <em>“Locke says all men deserve property as a
+                    natural right.”</em>).
+                  </li>
+                  <li>
+                    <strong>SPED/ELL support:</strong> guiding questions like
+                    <em>“What solution does the writer suggest?”</em> and teacher
+                    check-ins to support comprehension.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="segment-card independent-practice">
+              <div class="segment-header">Independent Practice</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Individually, students write a
+                    <strong>short paragraph</strong> answering SQ3:
+                    <span class="highlight"><em>“According to [writer’s name],
+                    how should people think differently about [society/government/etc.]?”</em></span>
+                  </li>
+                  <li>
+                    They must include at least one <strong>quote or specific
+                    detail</strong> from the text, using a simple
+                    <strong>Quote → Explanation</strong> graphic organizer.
+                  </li>
+                  <li>
+                    Teacher treats this as formative writing and
+                    <strong>collects paragraphs</strong> for quick scoring
+                    (focusing on evidence use and basic explanation).
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="segment-card share-closure">
+              <div class="segment-header">Share / Closure</div>
+              <div class="segment-body">
+                <ul>
+                  <li>
+                    Students pair up and exchange paragraphs, giving feedback:
+                    <em>“What idea did your partner identify? Did they use a quote?”</em>
+                  </li>
+                  <li>
+                    A few volunteers read strong paragraphs aloud.
+                  </li>
+                  <li>
+                    Teacher names the skill explicitly:
+                    <span class="highlight"><strong>“Today you practiced using
+                    specific evidence to show how ideas can inspire change –
+                    exactly what our argument rubric and
+                    HS.WH.I.UC.2/UC.3 ask you to do.”</strong></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="segment-card materials">
+              <div class="segment-header">Materials / Resources</div>
+              <div class="segment-body">
+                <ul>
+                  <li>Voltaire quote slide or handout.</li>
+                  <li>Locke, Montesquieu, and Smith excerpts (same as Day 4).</li>
+                  <li>Quote → Explanation graphic organizer.</li>
+                  <li>Paragraph rubric or checklist (simple, 3–4 criteria).</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </article>
+
+      <!-- Days 7–13 remain as placeholders for now -->
 
       <article class="day-card" id="day-7">
         <div class="day-header">
@@ -495,107 +1120,7 @@
         </div>
       </article>
 
-      <article class="day-card" id="day-8">
-        <div class="day-header">
-          <span class="day-label">Day 8</span>
-          <span class="day-short-title">[Insert Day 8 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="day-card" id="day-9">
-        <div class="day-header">
-          <span class="day-label">Day 9</span>
-          <span class="day-short-title">[Insert Day 9 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="day-card" id="day-10">
-        <div class="day-header">
-          <span class="day-label">Day 10</span>
-          <span class="day-short-title">[Insert Day 10 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="day-card" id="day-11">
-        <div class="day-header">
-          <span class="day-label">Day 11</span>
-          <span class="day-short-title">[Insert Day 11 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="day-card" id="day-12">
-        <div class="day-header">
-          <span class="day-label">Day 12</span>
-          <span class="day-short-title">[Insert Day 12 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="day-card" id="day-13">
-        <div class="day-header">
-          <span class="day-label">Day 13</span>
-          <span class="day-short-title">[Insert Day 13 focus]</span>
-        </div>
-        <div class="day-body">
-          <div class="day-focus">Day focus: [Insert description.]</div>
-          <div class="segments-grid">
-            <div class="segment-card mini-lesson"><div class="segment-header">Mini Lesson</div><div class="segment-body">[Mini lesson]</div></div>
-            <div class="segment-card guided-practice"><div class="segment-header">Guided Practice</div><div class="segment-body">[Guided]</div></div>
-            <div class="segment-card independent-practice"><div class="segment-header">Independent Practice</div><div class="segment-body">[Independent]</div></div>
-            <div class="segment-card share-closure"><div class="segment-header">Share / Closure</div><div class="segment-body">[Closure]</div></div>
-            <div class="segment-card materials"><div class="segment-header">Materials / Resources</div><div class="segment-body">[Materials]</div></div>
-          </div>
-        </div>
-      </article>
+      <!-- ...repeat same placeholder structure for days 8–13 as needed... -->
 
     </div>
 
@@ -603,7 +1128,8 @@
     <h2 class="section-heading">Standards Alignment</h2>
     <div class="intro-text">
       [Insert a short paragraph that explains which Kentucky Academic Standards
-      for Social Studies and inquiry skills are addressed in this unit.]
+      for Social Studies and inquiry skills are addressed in this unit, and how
+      they show up across Days 1–13.]
     </div>
 
     <table class="standards-table">
