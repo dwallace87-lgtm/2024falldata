@@ -1,22 +1,26 @@
+Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-plan look and with inline color-coded tables and charts:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Lesson Plan – 
-Lesson 1 – Staging the Compelling Question & Inalienable Rights (5th Period)</title>
+  <title>KTIP Lesson Plan – Day 1: Introduction & Inalienable Rights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
-      --navy: #16355b;
-      --mid-blue: #205b9c;
-      --light-blue: #e5efff;
-      --soft-gray: #f6f7fb;
-      --accent-gold: #f9b24c;
-      --accent-teal: #0f8c79;
-      --accent-purple: #6b4fd8;
-      --accent-pink: #f28b82;
-      --accent-green: #34a853;
-      --accent-orange: #fbbc04;
+      --navy: #003a63;
+      --navy-dark: #002846;
+      --blue-light: #e5effa;
+      --blue-mid: #2c73c9;
+      --gray-border: #cfd4dd;
+      --gray-light: #f7f9fc;
       --text-main: #222222;
+      --segment-mini: #2c73c9;
+      --segment-guided: #1f8a70;
+      --segment-independent: #c96f2c;
+      --segment-share: #7a3fb1;
+      --highlight-bg: #fff6b0;
     }
 
     * {
@@ -25,652 +29,484 @@ Lesson 1 – Staging the Compelling Question & Inalienable Rights (5th Period)</
 
     body {
       margin: 0;
-      padding: 24px 4vw 40px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Calibri", sans-serif;
       background: #ffffff;
       color: var(--text-main);
       line-height: 1.5;
     }
 
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
+    .top-strip {
+      border-top: 3px solid var(--blue-mid);
     }
 
     header {
-      border-bottom: 4px solid var(--mid-blue);
-      padding-bottom: 12px;
-      margin-bottom: 18px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 16px 0;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--navy);
+    .unit-meta {
+      font-size: 0.85rem;
+      color: var(--navy-dark);
+      text-align: center;
+      margin-bottom: 8px;
     }
 
-    .subtitle {
-      margin-top: 6px;
-      font-size: 0.98rem;
-      color: var(--accent-teal);
-      font-weight: 500;
-    }
-
-    .chip-row {
-      margin-top: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .chip {
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: var(--soft-gray);
-      color: var(--navy);
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-
-    .ktip-tag {
-      background: var(--accent-purple);
+    .unit-title-bar {
+      background: var(--navy);
       color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      border-radius: 4px 4px 0 0;
+      border: 1px solid var(--navy-dark);
+      border-bottom: none;
     }
 
-    h2.section-title {
-      margin: 22px 0 10px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--navy);
-      padding: 6px 12px;
-      border-radius: 8px;
-      background: linear-gradient(90deg, var(--light-blue), #ffffff);
-      border-left: 5px solid var(--accent-teal);
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
+    .unit-title-bar h1 {
+      margin: 0;
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
     }
 
-    h3.subheading {
-      margin: 14px 0 6px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--accent-teal);
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto 40px;
+      padding: 0 16px 24px;
+      border: 1px solid var(--gray-border);
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      background: #ffffff;
     }
 
-    p {
-      margin: 4px 0 10px;
-      font-size: 0.95rem;
+    .highlight {
+      background: var(--highlight-bg);
+      padding: 0 2px;
     }
 
     .info-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 4px 10px;
-      padding: 10px 12px;
-      background: var(--soft-gray);
-      border-radius: 10px;
-      font-size: 0.88rem;
-      margin-bottom: 10px;
-    }
-
-    .info-label {
-      font-weight: 600;
-      color: var(--navy);
-    }
-
-    .info-value {
-      color: var(--text-main);
-    }
-
-    .info-grid div {
-      padding: 2px 0;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      gap: 12px;
-    }
-
-    ul {
-      margin: 4px 0 10px 20px;
-      padding: 0;
-      font-size: 0.95rem;
-    }
-
-    ul li {
-      margin-bottom: 4px;
-    }
-
-    .highlight-pill {
-      display: inline-block;
-      padding: 1px 8px;
-      border-radius: 999px;
-      background: #fff7e9;
-      color: #8b4a00;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    .table-caption {
-      font-size: 0.86rem;
-      font-style: italic;
-      color: #555555;
-      margin-bottom: 4px;
-    }
-
-    .objective-tag {
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .ky-code {
-      font-weight: 700;
-      color: var(--accent-teal);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-    }
-
-    .badge-pre,
-    .badge-formative,
-    .badge-summative {
-      display: inline-block;
-      padding: 1px 6px;
-      border-radius: 6px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    .badge-pre {
-      background: #fde2e4;
-      color: #a51a35;
-    }
-
-    .badge-formative {
-      background: #e0f5ec;
-      color: #0b6547;
-    }
-
-    .badge-summative {
-      background: #fff1cd;
-      color: #8b5b00;
-    }
-
-    /* Tables – base */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 8px 0 16px;
+      grid-template-columns: 220px minmax(0, 1fr);
+      border: 1px solid var(--gray-border);
+      border-radius: 3px;
+      overflow: hidden;
+      margin: 16px 0 24px;
       font-size: 0.9rem;
     }
 
-    th, td {
-      padding: 6px 8px;
+    .info-label {
+      background: var(--blue-light);
+      border-right: 1px solid var(--gray-border);
+      padding: 8px 10px;
+      font-weight: 600;
+      color: var(--navy-dark);
+    }
+
+    .info-value {
+      padding: 8px 10px;
+    }
+
+    .section-heading {
+      margin: 22px 0 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy-dark);
+      border-bottom: 2px solid var(--blue-mid);
+      padding-bottom: 4px;
+    }
+
+    .intro-text {
+      font-size: 0.95rem;
+      background: var(--gray-light);
+      border: 1px solid var(--gray-border);
+      border-radius: 3px;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+    }
+
+    .subheading {
+      margin: 10px 0 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--blue-mid);
+    }
+
+    .bullet-list {
+      margin: 4px 0 10px 18px;
+      padding: 0;
+      font-size: 0.93rem;
+    }
+
+    .bullet-list li {
+      margin-bottom: 4px;
+    }
+
+    .pre-table,
+    .lesson-table,
+    .assessment-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 18px;
+      font-size: 0.9rem;
+    }
+
+    .pre-table th,
+    .lesson-table th,
+    .assessment-table th,
+    .pre-table td,
+    .lesson-table td,
+    .assessment-table td {
+      border: 1px solid var(--gray-border);
+      padding: 8px 8px;
       text-align: left;
       vertical-align: top;
-      border-bottom: 1px solid #d8e1ff;
     }
 
-    /* Procedures table styling */
-    table.procedures-table th {
-      background: linear-gradient(90deg, var(--mid-blue), var(--navy));
+    .pre-table th,
+    .lesson-table th,
+    .assessment-table th {
+      background: var(--navy-dark);
       color: #ffffff;
-      font-weight: 700;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    table.procedures-table tr:nth-child(even) td {
-      background: var(--soft-gray);
-    }
-
-    table.procedures-table tr:nth-child(odd) td {
-      background: #ffffff;
-    }
-
-    table.procedures-table td:first-child {
-      font-weight: 700;
-      color: var(--navy);
-      white-space: nowrap;
-    }
-
-    table.procedures-table td:nth-child(2) {
       font-weight: 600;
-      color: var(--accent-purple);
-      white-space: nowrap;
     }
 
-    /* Color-code phases with left borders */
-    .phase-launch td {
-      border-left: 4px solid var(--accent-gold);
+    .pre-table tr:nth-child(even) td,
+    .lesson-table tr:nth-child(even) td,
+    .assessment-table tr:nth-child(even) td {
+      background: #f3f6fb;
     }
 
-    .phase-mini td {
-      border-left: 4px solid var(--accent-purple);
-    }
-
-    .phase-guided td {
-      border-left: 4px solid var(--accent-teal);
-    }
-
-    .phase-indep td {
-      border-left: 4px solid var(--accent-green);
-    }
-
-    .phase-closure td {
-      border-left: 4px solid var(--accent-orange);
-    }
-
-    /* Assessment table styling */
-    table.assessment-table th {
-      background: linear-gradient(90deg, var(--accent-teal), var(--navy));
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    table.assessment-table tr:nth-child(even) td {
-      background: var(--soft-gray);
-    }
-
-    table.assessment-table tr:nth-child(odd) td {
-      background: #ffffff;
-    }
-
-    table.assessment-table td:first-child {
+    .phase-cell {
       font-weight: 600;
-      color: var(--navy);
+      width: 170px;
+    }
+    .phase-mini {
+      border-left: 4px solid var(--segment-mini);
+    }
+    .phase-guided {
+      border-left: 4px solid var(--segment-guided);
+    }
+    .phase-independent {
+      border-left: 4px solid var(--segment-independent);
+    }
+    .phase-share {
+      border-left: 4px solid var(--segment-share);
     }
 
-    .note {
-      font-size: 0.8rem;
-      color: #777777;
-      margin-top: 4px;
-    }
-
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
       .info-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
       }
-      .two-col {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
 
-    @media (max-width: 540px) {
-      body {
-        padding: 16px 10px 32px;
-      }
-      .info-grid {
-        grid-template-columns: minmax(0, 1fr);
+      .phase-cell {
+        width: auto;
       }
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <h1>KTIP Lesson Plan – Staging the Compelling Question & Inalienable Rights</h1>
-      <p class="subtitle">
-        Franklin County High School • 10th Grade World History • 5th Period • 2024–2025
-      </p>
-      <div class="chip-row">
-        <span class="chip ktip-tag">KTIP Pilot Lesson</span>
-        <span class="chip">Teacher: Donald Wallace</span>
-        <span class="chip">Lesson length: ~45 minutes</span>
-        <span class="chip">Unit: Enlightenment &amp; Revolution Inquiry</span>
-      </div>
-    </header>
+  <div class="top-strip"></div>
+  <header>
+    <div class="unit-meta">
+      KTIP Pilot Lesson Plan • 10th Grade World History • Franklin County High School • 5th Period
+    </div>
+    <div class="unit-title-bar">
+      <h1>Day 1: Introduction &amp; Inalienable Rights</h1>
+    </div>
+  </header>
 
-    <!-- KTIP header info -->
+  <div class="wrapper">
+    <!-- Basic lesson information -->
     <div class="info-grid">
-      <div class="info-label">Name</div>
+      <div class="info-label">Teacher</div>
       <div class="info-value">Donald Wallace</div>
-      <div class="info-label">Date</div>
-      <div class="info-value">8/19/2024</div>
 
-      <div class="info-label">Age / Grade</div>
-      <div class="info-value">Mostly 15–16 year olds • Grade 10</div>
-      <div class="info-label">Class / Period</div>
-      <div class="info-value">World History • 5th Period (after lunch)</div>
+      <div class="info-label">Date / Lesson Length</div>
+      <div class="info-value">Fall 2024 (sample), 45 minute period</div>
 
-      <div class="info-label"># of Students</div>
-      <div class="info-value">24 total</div>
-      <div class="info-label"># of IEP Students</div>
-      <div class="info-value">4 (reading / writing accommodations)</div>
+      <div class="info-label">Grade / Course</div>
+      <div class="info-value">10th Grade World History, Inquiry Design Model</div>
 
-      <div class="info-label"># of GSSP Students</div>
-      <div class="info-value">2 (early finishers / enrichment)</div>
-      <div class="info-label"># of MLL / LEP Students</div>
-      <div class="info-value">4 (Spanish as first language)</div>
-
-      <div class="info-label">Subject</div>
-      <div class="info-value">World History – Enlightenment &amp; Revolutions</div>
-      <div class="info-label">Major Content</div>
-      <div class="info-value">Inalienable / natural rights, Enlightenment thinkers, early revolutionary ideas</div>
+      <div class="info-label">Class Profile</div>
+      <div class="info-value">
+        5th Period World History &ndash; <strong>19 students</strong> total:
+        4 students with IEPs, 3 multilingual learners, 1 GSSP student,
+        mix of readers who are confident and students still building skills.
+      </div>
 
       <div class="info-label">Unit Title</div>
-      <div class="info-value">“How did Reason lead to Revolution?” (C3 Inquiry adaptation)</div>
-      <div class="info-label">Lesson # / Title</div>
-      <div class="info-value">Lesson 1 – Staging the Compelling Question &amp; Inalienable Rights</div>
+      <div class="info-value"><strong>Enlightenment and Revolutions</strong> Inquiry</div>
+
+      <div class="info-label">Lesson Number and Title</div>
+      <div class="info-value">
+        <strong>Lesson 1</strong> &ndash; Introduction to the Age of Reason and inalienable rights
+        (Staging the compelling question).
+      </div>
     </div>
 
     <!-- Context -->
-    <h2 class="section-title">Context</h2>
-    <p>
-      In the <strong>previous lesson</strong>, 5th period completed a short diagnostic pre-assessment on
-      Enlightenment and government. The assessment had <strong>8 multiple-choice items</strong> on core concepts
-      (natural rights, social contract, consent of the governed, separation of powers), <strong>1 matching
-      cluster</strong> where students paired thinkers like Locke, Montesquieu, Rousseau, and Voltaire with simplified
-      descriptions of their ideas, and <strong>1 short constructed response</strong> based on a Locke-style prompt:
-      <em>“Why might Enlightenment writers argue that people have the right to challenge their government?”</em>
-    </p>
-    <p>
-      That pre-assessment confirmed what I see day to day: most students could recognize some rights language in
-      answer choices, but many struggled to explain those ideas in their own words. I used the item results to note
-      common misconceptions (for example, confusing “rights” with “privileges”) and to make early decisions about
-      small-group support for reading and writing. Students who showed very limited understanding on the constructed
-      response are seated closer to the front or near peers who can model strong note-taking in this lesson.
-    </p>
-    <p>
-      5th period is a lively group right after lunch; several students come in chatty but engaged. Reading levels range
-      from about 7th–10th grade. My four IEP students benefit from chunked text, verbal directions, and graphic
-      organizers. The four MLLs are comfortable speaking in English but need explicit vocabulary and the option to jot
-      notes in Spanish. GSSP students usually finish quickly and like being given a leadership role
-      (for example, scribing on the class chart).
-    </p>
-    <p>
-      This lesson <strong>stages the compelling question</strong> – <u>“How did Reason lead to Revolution?”</u> – by
-      having students surface their own ideas about rights and then compare those ideas with short excerpts from Locke,
-      the <em>Declaration of Independence</em>, and the <em>Declaration of the Rights of Man and Citizen</em>. Their
-      notebook quick-writes and “Rights Chart” today build on the <strong>previous day’s diagnostic data</strong> and
-      give me a more qualitative baseline on how comfortably they can talk about inalienable rights in their own words.
-    </p>
-
-    <!-- Objectives & connections -->
-    <h2 class="section-title">Objectives</h2>
-    <div class="two-col">
-      <div>
-        <p>
-          By the end of this 45-minute lesson, <strong>students will be able to</strong>:
-        </p>
-        <ul>
-          <li>
-            <span class="objective-tag">O1:</span>
-            Define <strong>“inalienable rights”</strong> in their own words and list at least
-            <strong>three examples</strong> in their notebooks.
-          </li>
-          <li>
-            <span class="objective-tag">O2:</span>
-            Identify and <strong>underline</strong> key rights language in at least one primary-source excerpt
-            (Locke, <em>Declaration of Independence</em>, or <em>Rights of Man</em>) and explain what one phrase means in a sentence.
-          </li>
-          <li>
-            <span class="objective-tag">O3:</span>
-            Contribute at least one idea to a <strong>class “Rights Chart”</strong>, connecting Enlightenment ideas about rights
-            to modern examples (including early Kentucky and U.S. examples) during discussion.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="subheading">Connections to Kentucky Standards</h3>
-        <ul>
-          <li>
-            <span class="ky-code">HS.WH.CE.4</span> – Students start tracing <strong>causes of revolutions</strong> by examining
-            Enlightenment ideas about rights that will later challenge monarchies.
-          </li>
-          <li>
-            <span class="ky-code">HS.WH.CH.6</span> – Lesson introduces how views of <strong>government power and legitimacy</strong> shift
-            when people believe they have natural rights.
-          </li>
-          <li>
-            <span class="ky-code">HS.WH.I.UC.3</span> – Students <strong>use evidence from sources</strong> (three excerpts) in their charts
-            and written responses.
-          </li>
-          <li>
-            <span class="ky-code">HS.WH.KH.1</span> – I briefly connect Enlightenment rights language to Kentucky’s early constitutional
-            protections, such as religious freedom, so students see local relevance.
-          </li>
-        </ul>
-      </div>
+    <h2 class="section-heading">Context</h2>
+    <div class="intro-text">
+      This lesson opens our <strong>Enlightenment and Revolutions</strong> unit for 5th period at Franklin County High School.
+      It builds directly from yesterday's <span class="highlight">diagnostic pre assessment</span> on Enlightenment ideas,
+      which gave me a baseline for what students already understand and where they are confused.
+      In that pre assessment, most students recognized the phrase <em>natural rights</em> but were less confident with
+      terms like <em>social contract</em> and <em>consent of the governed</em>.
+      Several students with IEPs and multilingual learners left the short response blank or wrote very brief answers.
+      <br /><br />
+      Today I want to <strong>hook students with a visual</strong>, build shared language around
+      <span class="highlight">inalienable rights</span>, and give every student an accessible way to join the conversation.
+      The lesson uses the workshop model that my classes know well: mini lesson, guided practice, independent work,
+      and share/closure, with supports built in for SPED and MLL students.
     </div>
 
-    <!-- Resources -->
-    <h2 class="section-title">Resources, Media, &amp; Technology</h2>
-    <div class="two-col">
-      <div>
-        <h3 class="subheading">Materials</h3>
-        <ul>
-          <li>Projected image of <em>Madame Geoffrin’s salon</em> (public-domain painting).</li>
-          <li>Adapted excerpts packet: Locke’s <em>Two Treatises</em>, U.S. <em>Declaration of Independence</em>,
-              and French <em>Declaration of the Rights of Man and Citizen</em>.</li>
-          <li>Student notebooks or journals.</li>
-          <li>Chart paper or whiteboard space for the class “Rights Chart.”</li>
-          <li>“Rights Chart” individual graphic organizer (standard and modified versions).</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="subheading">Technology &amp; Supports</h3>
-        <ul>
-          <li>LCD projector and speakers for image and optional short video clip.</li>
-          <li>Google Classroom post with PDFs of the excerpts and a digital organizer for absent students.</li>
-          <li>Bilingual English–Spanish vocabulary slide and printable glossary for key terms like
-              <strong>inalienable, liberty, charter, liberté</strong>.</li>
-          <li>Permission for MLL students to use translation apps on Chromebooks when needed.</li>
-          <li>Document camera for modeling how to underline and annotate the texts.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Procedures -->
-    <h2 class="section-title">Procedures</h2>
-    <p class="table-caption">
-      I use a workshop structure: <strong>Launch / Mini-Lesson / Guided Practice / Independent Practice / Share and Closure</strong>.
-      Times are approximate for a 45-minute period.
-    </p>
-
-    <table class="procedures-table" aria-label="Lesson procedures">
+    <h3 class="subheading">Pre assessment snapshot (previous lesson)</h3>
+    <table class="pre-table" aria-label="Pre assessment structure">
       <thead>
         <tr>
-          <th style="width:11%;">Phase</th>
-          <th style="width:7%;">Time</th>
-          <th style="width:32%;">Teacher Actions</th>
-          <th style="width:30%;">Student Actions</th>
-          <th style="width:20%;">Differentiation / Notes</th>
+          <th>Item type</th>
+          <th>Number of items</th>
+          <th>Focus</th>
+          <th>Scoring detail</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="phase-launch">
-          <td>Launch</td>
-          <td>5 min</td>
+        <tr>
+          <td>Multiple choice</td>
+          <td>8</td>
           <td>
-            Greet students at the door; quick Do Now on the board:
-            <u>“When you hear the word <strong>right</strong>, what comes to mind?”</u>
-            Once seated, preview that we are starting a new unit on Enlightenment and Revolution.
+            Core Enlightenment concepts such as natural rights, social contract,
+            consent of the governed, separation of powers, and basic ideas about
+            the purpose of government.
           </td>
           <td>
-            Jot 2–3 ideas about “rights” in notebooks and share with a shoulder partner.
-            A few students share out whole-group.
-          </td>
-          <td>
-            Sentence starter on board:
-            <em>“A right is when people are allowed to…”</em>.
-            I cue a quieter student ahead of time so the first share feels safe.
+            One point per correct answer. Gave a quick read on prior knowledge and
+            common misconceptions.
           </td>
         </tr>
-        <tr class="phase-mini">
-          <td>Mini-Lesson</td>
-          <td>12–15 min</td>
+        <tr>
+          <td>Matching (cluster)</td>
+          <td>1 set</td>
           <td>
-            <ul>
-              <li>Project the <em>Salon of Madame Geoffrin</em> painting and ask, “What do you notice? What might they be debating?”</li>
-              <li>Guide observations toward <strong>ideas, books, arguments, government</strong>.</li>
-              <li>Introduce the term <strong>inalienable rights</strong> and connect to student examples
-                  (life, liberty, property, free speech).</li>
-              <li>Write the compelling question on the board, underlined:
-                  <u>“How did Reason lead to Revolution?”</u>
-                  Explain that today is about understanding the “rights” piece of that question.</li>
-            </ul>
+            Matching key thinkers (Locke, Montesquieu, Rousseau, Voltaire) to
+            simplified descriptions of their ideas.
           </td>
           <td>
-            <ul>
-              <li>Participate in “notice and wonder” about the painting.</li>
-              <li>Offer examples of rights they think everyone should have.</li>
-              <li>Copy the compelling question into notebooks and star it.</li>
-            </ul>
-          </td>
-          <td>
-            Vocabulary is posted with icons.  
-            I allow think-pair-share before whole-group volunteering.
-            I intentionally validate all attempts to build trust this early in the year.
+            Partial credit allowed for partially correct matches. Used mainly to see
+            whether students recognized names and core ideas.
           </td>
         </tr>
-        <tr class="phase-guided">
-          <td>Guided Practice</td>
-          <td>15–18 min</td>
+        <tr>
+          <td>Short constructed response</td>
+          <td>1</td>
           <td>
-            <ul>
-              <li>Distribute the three excerpts and the <strong>Rights Chart</strong> organizer.</li>
-              <li>Model one example on the document camera: read one sentence aloud, underline “life, liberty,
-                  pursuit of happiness,” and think aloud about what that means.</li>
-              <li>Give each table a different starting document and circulate, prompting:
-                  “Underline any phrase that sounds like a right people have just because they are human.”</li>
-            </ul>
+            Prompt: in a simplified Locke style, students answered
+            <em>"Why might Enlightenment writers argue that people have the right to challenge their government?"</em>
           </td>
           <td>
-            <ul>
-              <li>Read adapted excerpts in partners or trios.</li>
-              <li>Underline phrases that describe rights and jot them in the organizer under
-                  “Examples of inalienable rights.”</li>
-              <li>Check understanding at their table using quick oral explanations:
-                  <em>“This phrase means…”</em>.</li>
-            </ul>
-          </td>
-          <td>
-            SPED: partially filled chart and highlighted sentences in the text.  
-            MLL: use bilingual glossary and annotate in Spanish if needed.  
-            GSSP: find two less obvious rights (security, resistance to oppression) to share later.
-          </td>
-        </tr>
-        <tr class="phase-indep">
-          <td>Independent Practice</td>
-          <td>10–12 min</td>
-          <td>
-            Prompt on board (projected and read aloud):
-            <u>“According to these documents, what are examples of inalienable rights?”</u>
-            Circulate and confer with students who have incomplete charts or vague answers.
-          </td>
-          <td>
-            In notebooks, students:
-            <ul>
-              <li>Write a short response naming at least <strong>three rights</strong> they saw in the documents.</li>
-              <li>Add one genuine question they still have about rights
-                  (for example, “Is education an inalienable right?”).</li>
-            </ul>
-          </td>
-          <td>
-            Serves as a <span class="badge-pre">baseline pre-assessment</span> for writing about rights.
-            I note students who cannot name any specific rights so I can group them strategically tomorrow.
-          </td>
-        </tr>
-        <tr class="phase-closure">
-          <td>Share and Closure</td>
-          <td>5–8 min</td>
-          <td>
-            Invite several students, including at least one MLL and one IEP student who felt successful,
-            to share one right from their notebook.  
-            Record these on a large <strong>Class “Inalienable Rights” Chart</strong> that stays posted.
-            Close by connecting to Kentucky:
-            early Kentucky documents also protected rights like religious freedom,
-            foreshadowing how these Enlightenment ideas spread.
-          </td>
-          <td>
-            Add any new rights from the class chart to their own list.
-            Respond to a final prompt:
-            “Circle the right on your list that feels <u>most important</u> to you and be ready to explain why next class.”
-          </td>
-          <td>
-            Quick “fist-to-five” confidence check:
-            “How confident are you that you could explain what an inalienable right is?”
-            This gives a fast read on whole-class comfort before SQ1 tomorrow.
+            Scored on a 0&ndash;3 scale for clarity, use of the text, and basic explanation.
+            Writing samples informed groupings and how much modeling would be needed before the full essay.
           </td>
         </tr>
       </tbody>
     </table>
 
-    <!-- Assessment Plan -->
-    <h2 class="section-title">Assessment Plan</h2>
-    <p class="table-caption">
-      Assessments below are used within this single lesson and feed into the larger unit data set described in my outcomes documents.
-    </p>
+    <!-- Objectives -->
+    <h2 class="section-heading">Objectives</h2>
+    <ul class="bullet-list">
+      <li>
+        Students will be able to <strong>identify and define inalienable rights</strong>
+        and give at least three examples in writing.
+      </li>
+      <li>
+        Students will be able to <strong>locate rights language</strong> in short adapted excerpts from
+        Locke, the Declaration of Independence, and the Declaration of the Rights of Man and Citizen.
+      </li>
+      <li>
+        Students will be able to <strong>pose at least one question</strong> they still have about rights,
+        which will guide future lessons and small group support.
+      </li>
+    </ul>
 
+    <!-- Connections -->
+    <h2 class="section-heading">Connections to Kentucky Standards</h2>
+    <ul class="bullet-list">
+      <li>
+        <strong>HS.WH.CE.4</strong> &ndash; causes and effects of political revolutions
+        (students explore Enlightenment ideas about rights that will later fuel revolutions).
+      </li>
+      <li>
+        <strong>HS.WH.CH.6</strong> &ndash; changing views of government and legitimacy
+        (students consider how ideas like natural rights challenge absolute monarchy).
+      </li>
+      <li>
+        <strong>HS.WH.KH.1</strong> &ndash; connections to Kentucky history
+        (brief reference to religious freedom in Kentucky's 1792 constitution as an Enlightenment legacy).
+      </li>
+    </ul>
+
+    <!-- Resources -->
+    <h2 class="section-heading">Resources, Media, and Technology</h2>
+    <ul class="bullet-list">
+      <li>Projected image of an 18th century salon (Madame Geoffrin's salon, 1755).</li>
+      <li>Adapted excerpts from Locke's <em>Two Treatises</em>, the <em>Declaration of Independence</em>,
+          and the <em>Declaration of the Rights of Man and Citizen</em>.</li>
+      <li>Rights Chart organizer (standard and modified versions for SPED/MLL students).</li>
+      <li>Student notebooks, chart paper, markers, highlighters.</li>
+      <li>Optional: document camera or projector for whole class think aloud annotation.</li>
+    </ul>
+
+    <!-- Procedures -->
+    <h2 class="section-heading">Procedures (Workshop Model)</h2>
+    <table class="lesson-table" aria-label="Lesson procedures">
+      <thead>
+        <tr>
+          <th>Phase</th>
+          <th>Teacher actions</th>
+          <th>Student actions</th>
+          <th>Differentiation / notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="phase-cell phase-mini">Hook and Mini Lesson</td>
+          <td>
+            Project the Enlightenment salon image and prompt discussion:
+            <em>"What might people in this scene be talking about?"</em>
+            Connect their ideas to the Age of Reason and introduce the phrase
+            <strong>inalienable rights</strong>. Model examples on the board
+            (life, liberty, property, free speech, education) and explain how these ideas
+            will later challenge kings and empires.
+          </td>
+          <td>
+            Share observations about the image, respond to prompting questions,
+            and complete a quick write in notebooks:
+            <span class="highlight"><em>"What rights do you think everyone is born with? Give examples."</em></span>
+          </td>
+          <td>
+            Cold call intentionally but support anxious speakers.
+            Allow think time and sentence starters for students who need them.
+            This portion activates background knowledge from the pre assessment without restating all items.
+          </td>
+        </tr>
+        <tr>
+          <td class="phase-cell phase-guided">Guided Practice</td>
+          <td>
+            Distribute short adapted excerpts from the three documents.
+            Lead a think aloud with one paragraph, modeling how to underline rights language.
+            Then circulate as groups read and complete a shared Rights Chart.
+          </td>
+          <td>
+            In groups, read assigned excerpts, highlight phrases about rights,
+            and record rights from each document in the Rights Chart.
+            Ask clarifying questions as needed.
+          </td>
+          <td>
+            Provide a bilingual glossary for MLL students and allow translation apps.
+            SPED students receive a partially completed Rights Chart so they can focus on
+            locating and recording key words instead of copying long text.
+          </td>
+        </tr>
+        <tr>
+          <td class="phase-cell phase-independent">Independent Practice</td>
+          <td>
+            Restate the prompt and remind students to use their charts and notes.
+            Quietly scan a sample of notebooks while students work, noting who may need
+            reteaching or small group support next class.
+          </td>
+          <td>
+            Independently answer in notebooks:
+            <span class="highlight"><em>"According to these documents, what are examples of inalienable rights?"</em></span>
+            List at least three rights and write one question they still have about rights.
+          </td>
+          <td>
+            Allow extended time and chunking of the prompt for students with writing accommodations.
+            Offer optional sentence stems like
+            <em>"One inalienable right is..."</em> for students who need structure.
+          </td>
+        </tr>
+        <tr>
+          <td class="phase-cell phase-share">Share and Closure</td>
+          <td>
+            Invite several students to share their lists.
+            Build a class anchor chart of inalienable rights and leave it posted.
+            Close by noting that similar rights appear in early Kentucky documents,
+            such as freedom of religion in the 1792 constitution.
+          </td>
+          <td>
+            Share examples aloud, help add to the class chart, and listen for similarities
+            across classmates' ideas.
+          </td>
+          <td>
+            Use this share time to normalize questions about rights.
+            Acknowledge insightful questions that can feed future lessons on revolutions.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Assessment plan -->
+    <h2 class="section-heading">Assessment Plan</h2>
     <table class="assessment-table" aria-label="Assessment plan">
       <thead>
         <tr>
-          <th style="width:28%;">Objective</th>
-          <th style="width:25%;">Assessment Method</th>
-          <th style="width:12%;">Type</th>
-          <th style="width:35%;">What I’m Looking For / How I’ll Use It</th>
+          <th>Objective</th>
+          <th>Assessment method</th>
+          <th>Evidence of learning</th>
+          <th>When collected</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><span class="objective-tag">O1 – Define and list inalienable rights</span></td>
           <td>
-            Opening “rights” Do Now plus notebook response to:
-            <em>“What rights do you think everyone is born with?”</em>
+            Define inalienable rights and list at least three examples.
           </td>
-          <td><span class="badge-pre">Pre-assessment</span></td>
           <td>
-            I skim several during work time, then more after class, to establish a baseline of how many rights
-            students can name without support.  
-            I record quick tallies (0–1 rights, 2–3 rights, 4+ rights) in my data tracker.
+            Quick write and notebook response.
           </td>
-        </tr>
-        <tr>
-          <td><span class="objective-tag">O2 – Identify rights language in texts</span></td>
           <td>
-            Rights Chart organizer and underlined phrases in the excerpts;
-            informal questioning while circulating.
+            Student responses include a workable definition in their own words and at least
+            three appropriate examples of rights.
           </td>
-          <td><span class="badge-formative">Formative</span></td>
           <td>
-            I glance at charts from at least 6–8 students across ability levels.
-            If many have only “life and liberty,” I know I need to reteach lesser-known rights
-            such as security or resistance to oppression before moving on.
+            During independent practice; teacher scans notebooks the same day.
           </td>
         </tr>
         <tr>
-          <td><span class="objective-tag">O3 – Contribute to class Rights Chart and connect to context</span></td>
           <td>
-            Whole-class share and construction of the posted Rights Chart;
-            brief oral responses linking rights to modern or Kentucky examples.
+            Locate rights language in the three foundational documents.
           </td>
-          <td><span class="badge-formative">Formative</span></td>
           <td>
-            I track who volunteers and who I invite in future discussions.
-            The posted chart becomes a reference tool for later lessons and for the summative essay
-            about how Reason leads to Revolution.
+            Rights Chart organizer (group work) with informal teacher observation.
+          </td>
+          <td>
+            Completed charts show that groups have correctly pulled out phrases such as
+            "life, liberty, property" and "men are born and remain free and equal in rights."
+          </td>
+          <td>
+            During guided practice; charts checked at end of class or early next period.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Articulate at least one question or uncertainty about rights.
+          </td>
+          <td>
+            Question portion of notebook response and whole class share.
+          </td>
+          <td>
+            Students write a genuine question about rights. I note patterns
+            (for example, many students wondering whether education counts as an inalienable right)
+            to inform future mini lessons and small group supports.
+          </td>
+          <td>
+            Collected informally at closure; notes used in planning Day 2 and later lessons.
           </td>
         </tr>
       </tbody>
     </table>
-
-    <p class="note">
-      *No summative assessment happens in this single lesson. Content knowledge baseline comes from the
-      <strong>previous day’s diagnostic pre-assessment</strong>
-      (8 multiple choice items, 1 matching cluster, 1 constructed response on Locke).
-      Today’s quick-writes and Rights Charts provide additional <strong>qualitative baseline data</strong>
-      on how students describe inalienable rights in their own words before we move deeper into the inquiry.
-    </p>
   </div>
 </body>
 </html>
+```
