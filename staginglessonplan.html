@@ -1,11 +1,8 @@
-Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-plan look and with inline color-coded tables and charts:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>KTIP Lesson Plan – Day 1: Introduction & Inalienable Rights</title>
+  <title>KTIP Lesson Plan – Staging the Compelling Question & Inalienable Rights</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -50,7 +47,7 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
       font-size: 0.85rem;
       color: var(--navy-dark);
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
     .unit-title-bar {
@@ -125,6 +122,10 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
       margin-bottom: 18px;
     }
 
+    .intro-text p {
+      margin: 0 0 8px;
+    }
+
     .subheading {
       margin: 10px 0 4px;
       font-size: 1rem;
@@ -179,8 +180,15 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
 
     .phase-cell {
       font-weight: 600;
-      width: 170px;
+      width: 150px;
     }
+
+    .time-cell {
+      width: 90px;
+      font-weight: 500;
+      color: var(--navy-dark);
+    }
+
     .phase-mini {
       border-left: 4px solid var(--segment-mini);
     }
@@ -198,8 +206,8 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
       .info-grid {
         grid-template-columns: 1fr;
       }
-
-      .phase-cell {
+      .phase-cell,
+      .time-cell {
         width: auto;
       }
     }
@@ -209,60 +217,99 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
   <div class="top-strip"></div>
   <header>
     <div class="unit-meta">
-      KTIP Pilot Lesson Plan • 10th Grade World History • Franklin County High School • 5th Period
+      KTIP Lesson Plan – Staging the Compelling Question &amp; Inalienable Rights
+    </div>
+    <div class="unit-meta">
+      Franklin County High School • 10th Grade World History • 5th Period • 2024–2025
     </div>
     <div class="unit-title-bar">
-      <h1>Day 1: Introduction &amp; Inalienable Rights</h1>
+      <h1>Lesson 1 – Staging the Compelling Question &amp; Inalienable Rights</h1>
     </div>
   </header>
 
   <div class="wrapper">
-    <!-- Basic lesson information -->
+    <!-- Basic info -->
     <div class="info-grid">
+      <div class="info-label">KTIP Pilot Lesson</div>
+      <div class="info-value">World History – Enlightenment &amp; Revolutions</div>
+
       <div class="info-label">Teacher</div>
       <div class="info-value">Donald Wallace</div>
 
-      <div class="info-label">Date / Lesson Length</div>
-      <div class="info-value">Fall 2024 (sample), 45 minute period</div>
+      <div class="info-label">Date</div>
+      <div class="info-value">8/19/2024</div>
 
-      <div class="info-label">Grade / Course</div>
-      <div class="info-value">10th Grade World History, Inquiry Design Model</div>
+      <div class="info-label">Age / Grade</div>
+      <div class="info-value">Mostly 15–16 year olds • Grade 10</div>
 
-      <div class="info-label">Class Profile</div>
+      <div class="info-label">Class / Period</div>
+      <div class="info-value">World History • 5th Period (after lunch)</div>
+
+      <div class="info-label">Lesson Length</div>
+      <div class="info-value">~45 minutes</div>
+
+      <div class="info-label"># of Students</div>
+      <div class="info-value">24 total</div>
+
+      <div class="info-label"># of IEP Students</div>
+      <div class="info-value">4 (reading / writing accommodations)</div>
+
+      <div class="info-label"># of GSSP Students</div>
+      <div class="info-value">2 (early finishers / enrichment)</div>
+
+      <div class="info-label"># of MLL / LEP Students</div>
+      <div class="info-value">4 (Spanish as first language)</div>
+
+      <div class="info-label">Subject</div>
+      <div class="info-value">World History – Enlightenment &amp; Revolutions</div>
+
+      <div class="info-label">Major Content</div>
       <div class="info-value">
-        5th Period World History &ndash; <strong>19 students</strong> total:
-        4 students with IEPs, 3 multilingual learners, 1 GSSP student,
-        mix of readers who are confident and students still building skills.
+        Inalienable / natural rights, Enlightenment thinkers, early revolutionary ideas
       </div>
 
       <div class="info-label">Unit Title</div>
-      <div class="info-value"><strong>Enlightenment and Revolutions</strong> Inquiry</div>
+      <div class="info-value">
+        <strong>“How did Reason lead to Revolution?”</strong> (C3 Inquiry adaptation)
+      </div>
 
       <div class="info-label">Lesson Number and Title</div>
       <div class="info-value">
-        <strong>Lesson 1</strong> &ndash; Introduction to the Age of Reason and inalienable rights
-        (Staging the compelling question).
+        <strong>Lesson 1 – Staging the Compelling Question &amp; Inalienable Rights</strong>
       </div>
     </div>
 
     <!-- Context -->
     <h2 class="section-heading">Context</h2>
     <div class="intro-text">
-      This lesson opens our <strong>Enlightenment and Revolutions</strong> unit for 5th period at Franklin County High School.
-      It builds directly from yesterday's <span class="highlight">diagnostic pre assessment</span> on Enlightenment ideas,
-      which gave me a baseline for what students already understand and where they are confused.
-      In that pre assessment, most students recognized the phrase <em>natural rights</em> but were less confident with
-      terms like <em>social contract</em> and <em>consent of the governed</em>.
-      Several students with IEPs and multilingual learners left the short response blank or wrote very brief answers.
-      <br /><br />
-      Today I want to <strong>hook students with a visual</strong>, build shared language around
-      <span class="highlight">inalienable rights</span>, and give every student an accessible way to join the conversation.
-      The lesson uses the workshop model that my classes know well: mini lesson, guided practice, independent work,
-      and share/closure, with supports built in for SPED and MLL students.
+      <p>
+        In the previous lesson, 5th period completed a short <strong>diagnostic pre assessment</strong> on Enlightenment and government. The assessment included
+        <span class="highlight">8 multiple choice items</span> on core concepts (natural rights, social contract, consent of the governed, separation of powers),
+        <span class="highlight">1 matching cluster</span> where students paired thinkers like Locke, Montesquieu, Rousseau, and Voltaire with simplified descriptions of their ideas,
+        and <span class="highlight">1 short constructed response</span> based on a Locke style prompt:
+        <em>“Why might Enlightenment writers argue that people have the right to challenge their government?”</em>
+      </p>
+      <p>
+        That pre assessment confirmed what I see day to day: most students could recognize some rights language in answer choices, but many struggled to explain those ideas in their own words.
+        I used the item results to note common misconceptions (for example, confusing “rights” with “privileges”) and to make early decisions about small group support for reading and writing.
+        Students who showed very limited understanding on the constructed response are seated closer to the front or near peers who can model strong note taking in this lesson.
+      </p>
+      <p>
+        5th period is a lively group right after lunch; several students come in chatty but engaged. Reading levels range from about 7th–10th grade.
+        My four IEP students benefit from chunked text, verbal directions, and graphic organizers. The four MLLs are comfortable speaking in English but need explicit vocabulary and the option
+        to jot notes in Spanish. GSSP students usually finish quickly and like being given a leadership role (for example, scribing on the class chart).
+      </p>
+      <p>
+        This lesson <strong>stages the compelling question</strong> –
+        <span class="highlight"><strong>“How did Reason lead to Revolution?”</strong></span> –
+        by having students surface their own ideas about rights and then compare those ideas with short excerpts from Locke, the Declaration of Independence, and the Declaration of the Rights of Man and Citizen.
+        Their notebook quick writes and “Rights Chart” today build on the previous day’s diagnostic data and give me a more qualitative baseline on how comfortably they can talk about inalienable rights in their own words.
+      </p>
     </div>
 
-    <h3 class="subheading">Pre assessment snapshot (previous lesson)</h3>
-    <table class="pre-table" aria-label="Pre assessment structure">
+    <!-- Optional pre assessment snapshot table -->
+    <h3 class="subheading">Pre assessment item snapshot</h3>
+    <table class="pre-table" aria-label="Pre assessment snapshot">
       <thead>
         <tr>
           <th>Item type</th>
@@ -276,24 +323,24 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
           <td>Multiple choice</td>
           <td>8</td>
           <td>
-            Core Enlightenment concepts such as natural rights, social contract,
+            Core Enlightenment concepts, such as natural rights, social contract,
             consent of the governed, separation of powers, and basic ideas about
             the purpose of government.
           </td>
           <td>
-            One point per correct answer. Gave a quick read on prior knowledge and
-            common misconceptions.
+            One point per correct answer. These items provided a quick read on prior
+            knowledge and common misconceptions.
           </td>
         </tr>
         <tr>
           <td>Matching (cluster)</td>
-          <td>1 set</td>
+          <td>1</td>
           <td>
-            Matching key thinkers (Locke, Montesquieu, Rousseau, Voltaire) to
-            simplified descriptions of their ideas.
+            Matching key thinkers (Locke, Montesquieu, Rousseau, Voltaire) to simplified
+            descriptions of their ideas.
           </td>
           <td>
-            Partial credit allowed for partially correct matches. Used mainly to see
+            Partial credit allowed for partially correct matches. Used primarily to see
             whether students recognized names and core ideas.
           </td>
         </tr>
@@ -301,12 +348,12 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
           <td>Short constructed response</td>
           <td>1</td>
           <td>
-            Prompt: in a simplified Locke style, students answered
-            <em>"Why might Enlightenment writers argue that people have the right to challenge their government?"</em>
+            Students responded to a simplified Locke style prompt:
+            <em>“Why might Enlightenment writers argue that people have the right to challenge their government?”</em>
           </td>
           <td>
-            Scored on a 0&ndash;3 scale for clarity, use of the text, and basic explanation.
-            Writing samples informed groupings and how much modeling would be needed before the full essay.
+            Scored on a 0–3 scale for clarity, use of the text, and basic explanation.
+            This writing sample informed early grouping and how much modeling was needed before the essay.
           </td>
         </tr>
       </tbody>
@@ -316,16 +363,15 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
     <h2 class="section-heading">Objectives</h2>
     <ul class="bullet-list">
       <li>
-        Students will be able to <strong>identify and define inalienable rights</strong>
-        and give at least three examples in writing.
+        <strong>O1:</strong> Define <strong>“inalienable rights”</strong> in their own words and list at least three examples in their notebooks.
       </li>
       <li>
-        Students will be able to <strong>locate rights language</strong> in short adapted excerpts from
-        Locke, the Declaration of Independence, and the Declaration of the Rights of Man and Citizen.
+        <strong>O2:</strong> Identify and underline key rights language in at least one primary source excerpt
+        (Locke, Declaration of Independence, or Rights of Man) and explain what one phrase means in a sentence.
       </li>
       <li>
-        Students will be able to <strong>pose at least one question</strong> they still have about rights,
-        which will guide future lessons and small group support.
+        <strong>O3:</strong> Contribute at least one idea to a class <strong>“Rights Chart”</strong>, connecting Enlightenment ideas about rights to modern examples
+        (including early Kentucky and U.S. examples) during discussion.
       </li>
     </ul>
 
@@ -333,36 +379,46 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
     <h2 class="section-heading">Connections to Kentucky Standards</h2>
     <ul class="bullet-list">
       <li>
-        <strong>HS.WH.CE.4</strong> &ndash; causes and effects of political revolutions
-        (students explore Enlightenment ideas about rights that will later fuel revolutions).
+        <strong>HS.WH.CE.4</strong> – students start tracing causes of revolutions by examining Enlightenment ideas about rights that will later challenge monarchies.
       </li>
       <li>
-        <strong>HS.WH.CH.6</strong> &ndash; changing views of government and legitimacy
-        (students consider how ideas like natural rights challenge absolute monarchy).
+        <strong>HS.WH.CH.6</strong> – lesson introduces how views of government power and legitimacy shift when people believe they have natural rights.
       </li>
       <li>
-        <strong>HS.WH.KH.1</strong> &ndash; connections to Kentucky history
-        (brief reference to religious freedom in Kentucky's 1792 constitution as an Enlightenment legacy).
+        <strong>HS.WH.I.UC.3</strong> – students use evidence from sources (three excerpts) in their charts and written responses.
+      </li>
+      <li>
+        <strong>HS.WH.KH.1</strong> – brief connection from Enlightenment rights language to Kentucky’s early constitutional protections, such as religious freedom.
       </li>
     </ul>
 
     <!-- Resources -->
-    <h2 class="section-heading">Resources, Media, and Technology</h2>
+    <h2 class="section-heading">Resources, Media, &amp; Technology</h2>
+    <h3 class="subheading">Materials</h3>
     <ul class="bullet-list">
-      <li>Projected image of an 18th century salon (Madame Geoffrin's salon, 1755).</li>
-      <li>Adapted excerpts from Locke's <em>Two Treatises</em>, the <em>Declaration of Independence</em>,
-          and the <em>Declaration of the Rights of Man and Citizen</em>.</li>
-      <li>Rights Chart organizer (standard and modified versions for SPED/MLL students).</li>
-      <li>Student notebooks, chart paper, markers, highlighters.</li>
-      <li>Optional: document camera or projector for whole class think aloud annotation.</li>
+      <li>Projected image of Madame Geoffrin’s salon (public domain painting).</li>
+      <li>Adapted excerpts packet: Locke’s <em>Two Treatises</em>, U.S. <em>Declaration of Independence</em>, and French <em>Declaration of the Rights of Man and Citizen</em>.</li>
+      <li>Student notebooks or journals.</li>
+      <li>Chart paper or whiteboard space for the class <strong>Rights Chart</strong>.</li>
+      <li>“Rights Chart” individual graphic organizer (standard and modified versions).</li>
+    </ul>
+
+    <h3 class="subheading">Technology &amp; Supports</h3>
+    <ul class="bullet-list">
+      <li>LCD projector and speakers for the image and an optional short video clip.</li>
+      <li>Google Classroom post with PDFs of the excerpts and a digital organizer for absent students.</li>
+      <li>Bilingual English–Spanish vocabulary slide and printable glossary for key terms such as <em>inalienable</em>, <em>liberty</em>, <em>charter</em>, <em>liberté</em>.</li>
+      <li>Permission for MLL students to use translation apps on Chromebooks when needed.</li>
+      <li>Document camera for modeling how to underline and annotate the texts.</li>
     </ul>
 
     <!-- Procedures -->
-    <h2 class="section-heading">Procedures (Workshop Model)</h2>
+    <h2 class="section-heading">Procedures (Workshop Structure)</h2>
     <table class="lesson-table" aria-label="Lesson procedures">
       <thead>
         <tr>
           <th>Phase</th>
+          <th>Time</th>
           <th>Teacher actions</th>
           <th>Student actions</th>
           <th>Differentiation / notes</th>
@@ -370,77 +426,107 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
       </thead>
       <tbody>
         <tr>
-          <td class="phase-cell phase-mini">Hook and Mini Lesson</td>
+          <td class="phase-cell phase-mini">Launch</td>
+          <td class="time-cell">5 min</td>
           <td>
-            Project the Enlightenment salon image and prompt discussion:
-            <em>"What might people in this scene be talking about?"</em>
-            Connect their ideas to the Age of Reason and introduce the phrase
-            <strong>inalienable rights</strong>. Model examples on the board
-            (life, liberty, property, free speech, education) and explain how these ideas
-            will later challenge kings and empires.
+            Greet students at the door; Do Now on the board:
+            <em>“When you hear the word <strong>right</strong>, what comes to mind?”</em>
+            Preview that the class is starting a new unit on Enlightenment and Revolution.
           </td>
           <td>
-            Share observations about the image, respond to prompting questions,
-            and complete a quick write in notebooks:
-            <span class="highlight"><em>"What rights do you think everyone is born with? Give examples."</em></span>
+            Jot 2–3 ideas about rights in notebooks and share with a shoulder partner.
+            A few students share out with the whole class.
           </td>
           <td>
-            Cold call intentionally but support anxious speakers.
-            Allow think time and sentence starters for students who need them.
-            This portion activates background knowledge from the pre assessment without restating all items.
+            Sentence starter on board:
+            <span class="highlight"><em>“A right is when people are allowed to…”</em></span>.
+            Cue a quieter student ahead of time so the first share feels safe.
           </td>
         </tr>
         <tr>
-          <td class="phase-cell phase-guided">Guided Practice</td>
+          <td class="phase-cell phase-mini">Mini lesson</td>
+          <td class="time-cell">12–15 min</td>
           <td>
-            Distribute short adapted excerpts from the three documents.
-            Lead a think aloud with one paragraph, modeling how to underline rights language.
-            Then circulate as groups read and complete a shared Rights Chart.
+            Project the Salon of Madame Geoffrin painting and ask:
+            <em>“What do you notice? What might they be debating?”</em>
+            Guide observations toward ideas, books, arguments, government.
+            Introduce the term <strong>inalienable rights</strong> and connect to student examples
+            (life, liberty, property, free speech).
+            Write the compelling question on the board and underline it:
+            <span class="highlight"><strong>“How did Reason lead to Revolution?”</strong></span>.
+            Explain that today is about understanding the rights part of that question.
           </td>
           <td>
-            In groups, read assigned excerpts, highlight phrases about rights,
-            and record rights from each document in the Rights Chart.
-            Ask clarifying questions as needed.
+            Participate in “notice and wonder” about the painting.
+            Offer examples of rights they think everyone should have.
+            Copy the compelling question into notebooks and star it.
           </td>
           <td>
-            Provide a bilingual glossary for MLL students and allow translation apps.
-            SPED students receive a partially completed Rights Chart so they can focus on
-            locating and recording key words instead of copying long text.
-          </td>
-        </tr>
-        <tr>
-          <td class="phase-cell phase-independent">Independent Practice</td>
-          <td>
-            Restate the prompt and remind students to use their charts and notes.
-            Quietly scan a sample of notebooks while students work, noting who may need
-            reteaching or small group support next class.
-          </td>
-          <td>
-            Independently answer in notebooks:
-            <span class="highlight"><em>"According to these documents, what are examples of inalienable rights?"</em></span>
-            List at least three rights and write one question they still have about rights.
-          </td>
-          <td>
-            Allow extended time and chunking of the prompt for students with writing accommodations.
-            Offer optional sentence stems like
-            <em>"One inalienable right is..."</em> for students who need structure.
+            Vocabulary is posted with icons. Allow think–pair–share before whole group volunteering.
+            Intentionally validate all attempts to build trust early in the year.
           </td>
         </tr>
         <tr>
-          <td class="phase-cell phase-share">Share and Closure</td>
+          <td class="phase-cell phase-guided">Guided practice</td>
+          <td class="time-cell">15–18 min</td>
           <td>
-            Invite several students to share their lists.
-            Build a class anchor chart of inalienable rights and leave it posted.
-            Close by noting that similar rights appear in early Kentucky documents,
-            such as freedom of religion in the 1792 constitution.
+            Distribute the three excerpts and the Rights Chart organizer.
+            Model one example on the document camera: read a sentence aloud, underline
+            “life, liberty, pursuit of happiness,” and think aloud about what that means.
+            Give each table a different starting document and circulate, prompting:
+            <em>“Underline any phrase that sounds like a right people have just because they are human.”</em>
           </td>
           <td>
-            Share examples aloud, help add to the class chart, and listen for similarities
-            across classmates' ideas.
+            Read adapted excerpts in partners or trios.
+            Underline phrases that describe rights and record them in the organizer under
+            “Examples of inalienable rights.”
+            Check understanding at their table using quick oral explanations such as
+            <em>“This phrase means…”</em>.
           </td>
           <td>
-            Use this share time to normalize questions about rights.
-            Acknowledge insightful questions that can feed future lessons on revolutions.
+            SPED: partially filled chart and highlighted sentences in the text.
+            MLL: bilingual glossary and permission to annotate in Spanish.
+            GSSP: challenged to find two less obvious rights (for example, security or resistance to oppression) to share later.
+          </td>
+        </tr>
+        <tr>
+          <td class="phase-cell phase-independent">Independent practice</td>
+          <td class="time-cell">10–12 min</td>
+          <td>
+            Project and read aloud the prompt:
+            <span class="highlight"><em>“According to these documents, what are examples of inalienable rights?”</em></span>.
+            Circulate and confer with students who have incomplete charts or vague answers.
+          </td>
+          <td>
+            In notebooks, students write a short response naming at least three rights they saw in the documents
+            and add one genuine question they still have about rights
+            (for example, <em>“Is education an inalienable right?”</em>).
+          </td>
+          <td>
+            Serves as a baseline formative check for writing about rights.
+            Allow extended time and chunk the prompt for students with writing accommodations.
+            Offer optional sentence stems for those who need extra structure.
+          </td>
+        </tr>
+        <tr>
+          <td class="phase-cell phase-share">Share &amp; closure</td>
+          <td class="time-cell">5–8 min</td>
+          <td>
+            Invite several students, including at least one MLL and one IEP student who felt successful,
+            to share one right from their notebook.
+            Record these on a large class <strong>Inalienable Rights Chart</strong> that stays posted.
+            Close by connecting to Kentucky: early Kentucky documents also protected rights such as religious freedom,
+            foreshadowing how these Enlightenment ideas spread.
+          </td>
+          <td>
+            Add any new rights from the class chart to their own list.
+            Respond to a final prompt:
+            <em>“Circle the right on your list that feels most important to you and be ready to explain why next class.”</em>
+          </td>
+          <td>
+            Quick “fist to five” confidence check:
+            <em>“How confident are you that you could explain what an inalienable right is?”</em>
+            This gives a fast read on whole class comfort before SQ1 tomorrow.
           </td>
         </tr>
       </tbody>
@@ -453,60 +539,59 @@ Here’s a KTIP Day 1 lesson plan in HTML, restyled to match the navy/blue unit-
         <tr>
           <th>Objective</th>
           <th>Assessment method</th>
-          <th>Evidence of learning</th>
-          <th>When collected</th>
+          <th>Type</th>
+          <th>What I’m looking for / how I’ll use it</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>O1 – Define and list inalienable rights</td>
           <td>
-            Define inalienable rights and list at least three examples.
+            Opening “rights” Do Now plus notebook response to:
+            <em>“What rights do you think everyone is born with?”</em>
           </td>
+          <td>Pre assessment</td>
           <td>
-            Quick write and notebook response.
-          </td>
-          <td>
-            Student responses include a workable definition in their own words and at least
-            three appropriate examples of rights.
-          </td>
-          <td>
-            During independent practice; teacher scans notebooks the same day.
+            Skim several during work time, then more after class, to establish a baseline of how many rights
+            students can name without support. Record quick tallies (0–1 rights, 2–3 rights, 4+ rights) in my data tracker.
           </td>
         </tr>
         <tr>
+          <td>O2 – Identify rights language in texts</td>
           <td>
-            Locate rights language in the three foundational documents.
+            Rights Chart organizer and underlined phrases in the excerpts; informal questioning while circulating.
           </td>
+          <td>Formative</td>
           <td>
-            Rights Chart organizer (group work) with informal teacher observation.
-          </td>
-          <td>
-            Completed charts show that groups have correctly pulled out phrases such as
-            "life, liberty, property" and "men are born and remain free and equal in rights."
-          </td>
-          <td>
-            During guided practice; charts checked at end of class or early next period.
+            Glance at charts from at least 6–8 students across ability levels.
+            If many have only “life and liberty,” I know I need to reteach lesser known rights such as security
+            or resistance to oppression before moving on.
           </td>
         </tr>
         <tr>
+          <td>O3 – Contribute to class Rights Chart and connect to context</td>
           <td>
-            Articulate at least one question or uncertainty about rights.
+            Whole class share and construction of the posted Rights Chart; brief oral responses linking rights
+            to modern or Kentucky examples.
           </td>
+          <td>Formative</td>
           <td>
-            Question portion of notebook response and whole class share.
-          </td>
-          <td>
-            Students write a genuine question about rights. I note patterns
-            (for example, many students wondering whether education counts as an inalienable right)
-            to inform future mini lessons and small group supports.
-          </td>
-          <td>
-            Collected informally at closure; notes used in planning Day 2 and later lessons.
+            Track who volunteers and who I invite in future discussions.
+            The posted chart becomes a reference tool for later lessons and for the summative essay about how Reason leads to Revolution.
           </td>
         </tr>
       </tbody>
     </table>
+
+    <div class="intro-text">
+      <p>
+        <strong>Note:</strong> No summative assessment happens in this single lesson.
+        Content knowledge baseline comes from the previous day’s diagnostic pre assessment
+        (8 multiple choice items, 1 matching cluster, 1 constructed response on Locke).
+        Today’s quick writes and Rights Charts provide additional qualitative baseline data on how students
+        describe inalienable rights in their own words before we move deeper into the inquiry.
+      </p>
+    </div>
   </div>
 </body>
 </html>
-```
